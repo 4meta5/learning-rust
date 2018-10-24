@@ -7,7 +7,7 @@ This repo is my playground for learning Rust.
 * zencryption (command line encryption tool)
     1. symmetric encryption
     2. asymmetric encryption
-    3. eventually, I want to implement **proxy re-encryption** in Rust (think NuCypher and Umbral)
+    3. eventually, I want to implement **proxy re-encryption** in Rust (think NuCypher and Umbral)...here's parity's [implementation](https://github.com/paritytech/xpremtinel)
 * workout app 
     * integrate HashMap with closures (lazy evaluation/memoization code pattern)
 * pwasm-nft-example
