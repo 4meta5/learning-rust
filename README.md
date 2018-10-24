@@ -3,6 +3,7 @@
 This repo is my playground for learning Rust.
 
 # Projects
+* Category Theory for Programmers by Bartosz Milewski
 * zencryption (command line encryption tool)
     1. symmetric encryption
     2. asymmetric encryption
@@ -20,6 +21,7 @@ This repo is my playground for learning Rust.
 * [red black merkle tree](https://github.com/amiller/redblackmerkle)
 * Advanced hash tables -- [Advanced techniques to implement fast hash tables](https://attractivechaos.wordpress.com/2018/10/01/advanced-techniques-to-implement-fast-hash-tables/)
 * Doubly Linked List -- [sol-dllr](https://github.com/skmgoldin/sol-dll/blob/master/contracts/DLL.sol)
+* [Hashlife](https://en.wikipedia.org/wiki/Hashlife) for Conway's Game of Life
 
 ## Crates
 * wasm crates
