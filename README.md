@@ -2,26 +2,31 @@
 
 This repo is my playground for learning Rust.
 
-# Projects
-* Category Theory for Programmers by Bartosz Milewski
-* zencryption (command line encryption tool)
-    1. symmetric encryption
-    2. asymmetric encryption
-    3. eventually, I want to implement **proxy re-encryption** in Rust (think NuCypher and Umbral)...here's parity's [implementation](https://github.com/paritytech/xpremtinel)
-* workout app 
-    * integrate HashMap with closures (lazy evaluation/memoization code pattern)
-* pwasm-nft-example
-    1. ecr 165
-    2. surrounding solidity contracts
-    * consider using/contributing to 'solc' (Solidity to Rust compiler)
-* RadicalTCR
+## Code Patterns
+* lazy evaluation with dynamic cacher
 
-## Data Structures
+* using serde with untrusted (look at Parity code and the ring library)
+
+### Data Structures
 * [urkel tree](https://github.com/handshake-org/urkel)
 * [red black merkle tree](https://github.com/amiller/redblackmerkle)
 * Advanced hash tables -- [Advanced techniques to implement fast hash tables](https://attractivechaos.wordpress.com/2018/10/01/advanced-techniques-to-implement-fast-hash-tables/)
 * Doubly Linked List -- [sol-dllr](https://github.com/skmgoldin/sol-dll/blob/master/contracts/DLL.sol)
 * [Hashlife](https://en.wikipedia.org/wiki/Hashlife) for Conway's Game of Life
+
+## Projects
+> some old shit
+
+* Category Theory for Programmers by Bartosz Milewski
+* zencryption (command line encryption tool)
+    1. symmetric encryption
+    2. asymmetric encryption
+    3. eventually, I want to implement **proxy re-encryption** in Rust (think NuCypher and Umbral)...here's parity's [implementation](https://github.com/paritytech/xpremtinel)
+* pwasm-nft-example
+    1. ecr 165
+    2. surrounding solidity contracts
+    * consider using/contributing to 'solc' (Solidity to Rust compiler)
+* RadicalTCR
 
 ## Crates
 * wasm crates
