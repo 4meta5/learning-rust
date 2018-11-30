@@ -98,3 +98,5 @@ With this in mind, the `hello_macro_derive` function is called whenever a user o
 * [The Rust Book - Appendix on Macros](https://doc.rust-lang.org/book/second-edition/appendix-04-macros.html)
 * [Rust by Example: Macros](https://doc.rust-lang.org/rust-by-example/macros.html)
 * [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/mbe-README.html)
+
+* [Creating Macros in Rust](https://hub.packtpub.com/creating-macros-in-rust-tutorial/)

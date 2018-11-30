@@ -8,10 +8,15 @@ This repo is my playground for learning Rust.
 * using serde with untrusted (look at Parity code and the ring library)...substrate/core/primitives/ed25519
 
 * errorchain (learn how to build macros using this example...it's very well made)....[link](https://github.com/rust-lang-nursery/error-chain)...look at substrate/core/keystore for an example
+    * [Rust Error Handling](https://blog.burntsushi.net/rust-error-handling/)
 
 * check out [paritytech/trie](https://github.com/paritytech/trie); try and pattern match to implement other data structures
 
 * /metaprogramming contains notes on Rust macros and some practice code
+
+* ffi; calling in other language code!
+
+* wasm
 
 ### Data Structures
 * [urkel tree](https://github.com/handshake-org/urkel)
