@@ -9,6 +9,8 @@ This repo is my playground for learning Rust.
 
 * errorchain (learn how to build macros using this example...it's very well made)....[link](https://github.com/rust-lang-nursery/error-chain)
 
+* check out [paritytech/trie](https://github.com/paritytech/trie); try and pattern match to implement other data structures
+
 ### Data Structures
 * [urkel tree](https://github.com/handshake-org/urkel)
 * [red black merkle tree](https://github.com/amiller/redblackmerkle)
