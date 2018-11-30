@@ -7,9 +7,11 @@ This repo is my playground for learning Rust.
 
 * using serde with untrusted (look at Parity code and the ring library)...substrate/core/primitives/ed25519
 
-* errorchain (learn how to build macros using this example...it's very well made)....[link](https://github.com/rust-lang-nursery/error-chain)
+* errorchain (learn how to build macros using this example...it's very well made)....[link](https://github.com/rust-lang-nursery/error-chain)...look at substrate/core/keystore for an example
 
 * check out [paritytech/trie](https://github.com/paritytech/trie); try and pattern match to implement other data structures
+
+* /metaprogramming contains notes on Rust macros and some practice code
 
 ### Data Structures
 * [urkel tree](https://github.com/handshake-org/urkel)
@@ -33,8 +35,9 @@ This repo is my playground for learning Rust.
 * RadicalTCR
 
 ## Crates
-* wasm crates
-* serde
-* parity
-* althea
-* lighthouse (rust eth 2.0 client)
+* serde; serde_json; serde_derive
+* lazy_static
+* ring; untrusted
+* error_chain
+* serde_derive
+* hex
