@@ -2,7 +2,7 @@
 
 > basically just some notes on Rust Macros and best practices
 
-## Little Macro Book Notes
+## Some Background
 > [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/mbe-README.html)
 
 Stages of compilation:
@@ -28,6 +28,14 @@ ie Macros can NOT appear in place of:
 * Match arms
 * Struct fields
 * Types (available in unstable Rust via `#![feature(typo)];`)
+
+> *where* you can invoke a macro determines what its result will be interpreted as...the compiler takes the AST node and completely replaces the macro's invocation node with the output node. This is a *structural operation*, not a textural one!
+
+Macro expansions are treated as AST nodes =>
+* In addition to there being a limited number of invocation *positions*, macros can *only* exapnd to the kind of AST node the parser *expects* at that position
+* As a consequence, macros *absolutely cannot* expand to incomplete or syntactically invalid constructs
+
+> notes on [macro_rules](./macro_rules.md) from this same book...very useful!
 
 ## Declarative Macros
 

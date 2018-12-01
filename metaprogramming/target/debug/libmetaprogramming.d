@@ -1,0 +1,1 @@
+/Users/amarsingh/Smerkle/playground/metaprogramming/target/debug/libmetaprogramming.rlib: /Users/amarsingh/Smerkle/playground/metaprogramming/src/lib.rs /Users/amarsingh/Smerkle/playground/metaprogramming/src/simple.rs
