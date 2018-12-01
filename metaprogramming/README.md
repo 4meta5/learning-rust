@@ -2,6 +2,33 @@
 
 > basically just some notes on Rust Macros and best practices
 
+## Little Macro Book Notes
+> [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/mbe-README.html)
+
+Stages of compilation:
+1. **tokenisation**: source text is transformed into a sequence of tokens (ie indivisible units)
+2. **parsing**: the stream of tokens is turned into an Abstract Syntax Tree (AST)
+* the AST contains the structure of the *entire* program, though it is based on purely *lexical* information. 
+3. Macros are processed
+
+> **Token trees** are between tokens and the AST!
+
+* The input to every macro is a single non-leaf token tree
+* Macros (actually, syntax extensions in general) are parsed as *part* of the abstract syntax tree
+
+Macros can appear in place of the following:
+* Patterns
+* Statements
+* Expressions
+* Items
+* `impl` Items
+
+ie Macros can NOT appear in place of:
+* Identifiers
+* Match arms
+* Struct fields
+* Types (available in unstable Rust via `#![feature(typo)];`)
+
 ## Declarative Macros
 
 As an example, look at the simplified definition of the `vec!` macro:

@@ -7,6 +7,7 @@ pub struct List<T> {
     head: Link<T>,
 }
 
+// type aliase
 type Link<T> = Option<Box<Node<T>>>;
 
 struct Node<T> {
