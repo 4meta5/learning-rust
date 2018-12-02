@@ -3,6 +3,8 @@ pub mod simple;
 
 pub mod recurrence;
 
+pub mod cfg_practice.rs;
+
 #[cfg(test)]
 mod tests {
     use super::*;
