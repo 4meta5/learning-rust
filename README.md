@@ -42,8 +42,13 @@ This repo is my playground for learning Rust.
 
 ## Crates
 * serde; serde_json; serde_derive
+* log
 * lazy_static
 * ring; untrusted
 * error_chain
-* serde_derive
 * hex
+
+* tokio
+* futures
+* fdlimit
+* exit-future

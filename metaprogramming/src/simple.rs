@@ -34,3 +34,11 @@ macro_rules! vec_strs {
         }
     };
 }
+
+
+// taken from Substrate/core/primitives/lib.rs
+macro_rules! map {
+	($( $name:expr => $value:expr ),*) => (
+		vec![ $( ( $name, $value ) ),* ].into_iter().collect()
+	)
+}
