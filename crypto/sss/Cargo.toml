@@ -1,0 +1,12 @@
+[package]
+name = "sss"
+version = "0.1.0"
+authors = ["Amar Singh <asinghchrony@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+base64 = "0.9.0"
+rand = "^0.4.2"
+ring = "^0.12"
+merkle_sigs = "^1.4"
+protobuf = ">= 1.4, < 1.6"
