@@ -1,5 +1,5 @@
 [package]
-name = "crypto"
+name = "primtives"
 version = "0.1.0"
 authors = ["Amar Singh <asinghchrony@protonmail.com>"]
 edition = "2018"
