@@ -11,5 +11,3 @@
 * Shamir Secret Sharing
 * Reed-Solomon Erasure Encoding
 * MPC practice
-
-* Algebra: [Nikolay Volf's repo](https://github.com/NikVolf/ng)
