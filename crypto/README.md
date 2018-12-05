@@ -4,8 +4,12 @@
 
 * primitives
     * hashing
+    * implementation of HashMap and HashSet for `no_std` environments: [Amanieu repo](https://github.com/Amanieu/hashmap_core)
+    * merkle_tree [naive implementation](https://github.com/niklasad1/merkle-tree-rs); also Rusty Secrets implemented this
 
 ## TODO
 * Shamir Secret Sharing
 * Reed-Solomon Erasure Encoding
 * MPC practice
+
+* Algebra: [Nikolay Volf's repo](https://github.com/NikVolf/ng)
