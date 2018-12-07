@@ -1,6 +1,6 @@
-// mod field;
+mod field;
 // mod element;
-// mod arith;
+mod traits;
 // mod impls;
 // mod mont;
 

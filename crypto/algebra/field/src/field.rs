@@ -1,5 +1,5 @@
 use std::ops::{Add, Mul, Sub, Div, Neg};
-use arith::Scalar;
+use traits::Scalar;
 
 /// very abstract for maximum generalizability moving forward
 

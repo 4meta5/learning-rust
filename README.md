@@ -2,6 +2,13 @@
 
 This repo is my playground for learning Rust.
 
+**Immediate**
+* lazy_static
+* serialization with serde (play with this more)
+* iterating and working with bits (maybe with respect to serialization)
+* merkle tree and hashmap stuff
+* ecc stuff
+
 ## Code Patterns
 * lazy evaluation with dynamic cacher...using [lazy-static.rs](https://github.com/rust-lang-nursery/lazy-static.rs)
 
