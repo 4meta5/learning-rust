@@ -1,10 +1,12 @@
 
 
-pub mod linkedlist;
+mod linkedlist;
 
-pub mod quickstart; //template for error_chain!
+mod quickstart; //template for error_chain!
 
-pub mod recurrence.rs; // learning macros with recurrence relations
+mod recurrence.rs; // learning macros with recurrence relations
+
+mod conversion.rs // playing around with std::convert
 
 #[cfg(test)]
 mod tests {
