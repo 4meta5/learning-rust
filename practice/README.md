@@ -1,12 +1,12 @@
 # Practice
+> Some practice code patterns that I found(/find) useful when learning Rust
 
-These are just code patterns for me to practice; usually limited to one file code patterns rather than larger repos.
-
-* Linked List in Rust
-* Recurrence Rust macros practice
-* Quickstart `error_chain!` scaffolding
-* Conversion for practicing `From` and `Into`
+* Linked List -- `linkedlist.rs`
+* Macros Pratice -- `recurrence.rs`
+* Quickstart `error_chain!` scaffolding -- `quickstart.rs`
+* Conversion for practicing `From` and `Into` -- `conversion.rs`
+* State Machine -- `statemachine.rs`
+* Combinators (`map`, `and_then`) -- `combinators.rs`
 
 ## Todo
-* combinators (`and_then` and `map`) -- [blog](https://hermanradtke.com/2016/09/12/rust-using-and_then-and-map-combinators-on-result-type.html)
 * parsers and lexers

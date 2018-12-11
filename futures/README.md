@@ -14,6 +14,8 @@
 
 *Futures are a concept for an object which is a proxy for another value that may not be ready yet. With an object representing a value that will eventually be available, futures allow for powerful composition of tasks through basic combinators that can perform operations like chaining computations, changing the types of futures, or waiting for two futures to complete at the same time.*
 
+> *In essence, a future represents a value that might not be ready yet. Usually the future becomes complete (the value is ready) due to an event happening somewhere else.*
+
 **What is an executor?**
 An executor ensures that the future is executed. In practice, this works by `poll`ing all the futures until they return `Async::Ready`. Here is the definition of `Future::poll` method:
 
@@ -44,6 +46,53 @@ Things become very interesting with futures when you combine them:
 ### Streams <a name = "streams"></a>
 
 *Futures are all about a single value that will eventually be produced, but many event sources naturally produce a stream of values over time...The futures library includes a `Stream` trait such that the set up produces a sequence of values over time. It has a set of combinators, some of which work with futures.*
+
+### Design Rationale <a name = "design"></a>
+> [Futures Design by Aaron Turon](http://aturon.github.io/2016/09/07/futures-design/)
+
+* leverage Rust's traits and closures for ergonomics and cost-avoidance; traits and closures do not require heap allocation or dynamic dispatch
+* core `Future` abstraction is *demand-driven* rather than callback-oriented (ie follow the "readiness" style rather than the "completion" style)
+* providing a task abstraction, similar to a green thread, that drives a future to completion 
+
+> Rather than opting for the *completion-based* approach, in which events are signaled based on completion of operations, the Rust implementation of `Future`s is "demand-driven"(*readiness-based*). 
+
+```
+/// A simplified version of the trait, without error-handling
+trait Future {
+    // the type of value produced on success
+    type Item;
+
+    // Polls the future, resolving to a value if possible
+    fn poll(&mut self) -> Async<Self::Item>;
+}
+
+enum Async<T> {
+    // Represents that a value is immediately ready
+    Ready(T);
+
+    // Represents a value that is not ready yet, but may be so later
+    NotReady;
+}
+```
+
+Rather than the future proactively invoking a callback on completion, an external party must *poll* the future to drive it to completion.
+
+A *task* is a future that is being executed. The task blocks by yielding back to its executor, after installing itself as a callback for the event it's waiting on. Under this paradigm, the task is woken up when the future is ready. at which point it will re-`poll` the future. Task instance stays fixed for the lifetime of the future it is executing -- so no allocation is needed to create or install this callback.
+
+Tasks provide a `park`/`unpark` API for blocking and wakeup:
+```
+/// Returns a handle to the current task to call unpark at a later date
+fn park() -> Task;
+
+impl Task {
+    /// Indicate that the task should attempt to poll its future in a timely fashion
+    fn unpark(&self);
+}
+```
+
+Blocking a future is a matter of using `park` to get a handle to its task, putting the resulting `Task` in some wakeup queue for the event of interest, and returning `NotReady`. When the event of interest occurs, the `Task` handle can be used to wake back up the task, e.g. by rescheduling it for execution on a thread pool.
+
+> The future within a task compiles down to a state machine, so that every time the task wakes up to continue polling, it continues execution from the current state.
 
 ## Tokio <a name = "tokio"></a>
 > [Expanding the Tokio Project](http://aturon.github.io/2016/08/26/tokio/) by Aaron Turon
