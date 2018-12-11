@@ -3,6 +3,10 @@
 This repo is my playground for learning Rust.
 
 **Immediate**
+* rhododendron; more futures notes
+* make a version of SSS that leverages futures (consensus alg)
+* consider a crate for erasure encoding that leverages futures (consensus alg)
+
 * lazy_static
 * serialization with serde (play with this more)
 * iterating and working with bits (maybe with respect to serialization)
