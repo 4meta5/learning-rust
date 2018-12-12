@@ -11,3 +11,6 @@
 ## Todo
 * parsers and lexers
 * ffi (calling in `C` code)
+* lock-free and wait-free algorithms
+    * [blog post](http://www.rossbencina.com/code/lockfree)
+    * [jonhoo/bus](https://github.com/jonhoo/bus)
