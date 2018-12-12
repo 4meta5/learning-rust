@@ -1,5 +1,5 @@
 # Futures
-> [my notes and conceptual references](./notes.md)
+> [notes](./notes.md)
 
 **Reference Repos**
 * [rphmeier/honeybadger](https://github.com/rphmeier/honeybadger) -- HoneybadgerBFT in Rust

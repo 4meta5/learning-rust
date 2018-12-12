@@ -5,9 +5,11 @@
 * primitives
     * hashing
     * implementation of HashMap and HashSet for `no_std` environments: [Amanieu repo](https://github.com/Amanieu/hashmap_core)
-    * merkle_tree [naive implementation](https://github.com/niklasad1/merkle-tree-rs); also Rusty Secrets implemented this
+    * merkle_tree [naive implementation](https://github.com/niklasad1/merkle-tree-rs)
 
 ## TODO
-* Shamir Secret Sharing
+* Shamir Secret Sharing Scheme
 * Reed-Solomon Erasure Encoding
-* MPC practice
+    * [The Codes of Solomon, Reed and Muller](https://jeremykun.com/2015/03/23/the-codes-of-solomon-reed-and-muller/) -- Jeremy Kun (read the two articles before as well on Information Theory and Hamming Codes)
+* Zero Knowledge Practice *(consider making into own repo)*
+* MPC practice *(consider making into own repo)*

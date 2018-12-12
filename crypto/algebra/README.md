@@ -4,4 +4,5 @@
 
 TODO:
 * make it more generalizable
+    * check [this](https://github.com/snipsco/rust-threshold-secret-sharing/tree/master/src) out
 * generalize to elliptic curve cryptography
