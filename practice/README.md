@@ -10,6 +10,10 @@
 
 ## Todo
 * parsers and lexers
+    * [`syn`](https://github.com/dtolnay/syn)
+    * [`quote`](https://github.com/dtolnay/quote)
+    * [`combine`](https://github.com/Marwes/combine)
+    * [``](https://github.com/Geal/nom)
 * ffi (calling in `C` code)
 * lock-free and wait-free algorithms
     * [blog post](http://www.rossbencina.com/code/lockfree)
