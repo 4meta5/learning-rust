@@ -11,5 +11,10 @@ There are a few implementations, some of which I may plan to explore in this dir
 
 >  [More notes](https://github.com/AmarRSingh/notes/blob/master/Cryptography/SSSS.md)
 
+## Currently Working On...
+* Linear Algebra Approach in `./threshold`
+    * want to add a consensus mechanism on top of it for performing SSS over a distributed set of nodes
+    * use futures for this purpose
+
 ### References
 * [Survey Paper](https://www.cs.bgu.ac.il/~beimel/Papers/Survey.pdf)

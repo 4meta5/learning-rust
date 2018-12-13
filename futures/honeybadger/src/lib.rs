@@ -179,9 +179,6 @@ impl<T, I> Future for ShareAccumulator<T, I> where T: ThresholdEncryption, I: St
                         Ok(Async::Ready(Some(val))) => {
                             self.state = acc.accumulate(val);
                         }
-                        Ok(Async::Ready(Some(val))) => {
-                            self.state = acc.accumulate(val);
-                        }
                         Ok(Async::Ready(None)) => {
                             return Err(BadCiphertext);
                         }
