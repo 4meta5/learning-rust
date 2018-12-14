@@ -1,6 +1,6 @@
 /// From [](https://github.com/sellibitze/secretshare/blob/master/src/gf256.rs)
 //! This module provides the Gf256 type which is used to represent
-//! elements of a finite field wich 256 elements.
+//! elements of a finite field (galois field more specifically) wich 256 elements.
 
 use std::num::Wrapping;
 use std::ops::{ Add, Sub, Mul, Div };

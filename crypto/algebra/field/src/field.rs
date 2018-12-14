@@ -14,3 +14,5 @@ pub trait Field: Copy + Clone + PartialEq + ::std::fmt::Debug {
 }
 
 pub trait FieldElement
+
+/// > check against this [](https://github.com/snipsco/rust-threshold-secret-sharing/blob/master/src/fields/mod.rs)
