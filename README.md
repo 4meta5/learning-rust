@@ -15,9 +15,21 @@ This repo is my playground for learning Rust.
 
 ## Projects
 
-* decentralized orderbook (=> prediction markets)
+### Substrate/Polkadot
+
+* decentralized orderbook (=> prediction markets; decentralized exchanges)
+    * look at 0x code...they've figured this out to an extent
+    * Uniswap as well
+
+* algorithmic dispute resolution (<=> construction contracts; supply chain tracking...reach out to Hyperledger team if I start building this)
+
+* decentralized lending pool
+
+* TCRs of course
 
 > some old shit
+
+### Other Rust Stuff
 
 * Category Theory for Programmers by Bartosz Milewski
 * zencryption (command line encryption tool)

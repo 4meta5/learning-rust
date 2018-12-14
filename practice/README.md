@@ -3,7 +3,6 @@
 
 * Linked List -- `linkedlist.rs`
 * Macros Pratice -- `recurrence.rs`
-* Quickstart `error_chain!` scaffolding -- `quickstart.rs`
 * Conversion for practicing `From` and `Into` -- `conversion.rs`
 * State Machine -- `statemachine.rs`
 * Combinators (`map`, `and_then`) -- `combinators.rs`
@@ -18,3 +17,6 @@
 * lock-free and wait-free algorithms
     * [blog post](http://www.rossbencina.com/code/lockfree)
     * [jonhoo/bus](https://github.com/jonhoo/bus)
+* building a domain specific language
+    * check out Zokrates
+    * [how to roll out custom DSL w/o getting hurt](https://www.slideshare.net/RReverser/building-fast-interpreters-in-rust)
