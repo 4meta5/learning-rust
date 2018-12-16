@@ -16,16 +16,33 @@ This repo is my playground for learning Rust.
 ## Projects
 
 ### Substrate/Polkadot
+> building modules is the best approach; maximize synchronous communication within chains in lieu of relatively *expensive* cross-chain communication (which is asynchronous)
+
+> would be interesting to analyze the consensus process and consider how this could be replicated in the context of zero knowledge technology (look at Zokrates for this; or DIZK)
 
 * decentralized orderbook (=> prediction markets; decentralized exchanges)
     * look at 0x code...they've figured this out to an extent
     * Uniswap as well
+    * a dex module would be very useful
 
 * algorithmic dispute resolution (<=> construction contracts; supply chain tracking...reach out to Hyperledger team if I start building this)
 
-* decentralized lending pool
+* central bank chain (some protocol not dissimilar to MakerDAO operating on a parachain) -- designed with the purpose of digitizing fiat currencies in mind
+    * decentralized lending pool
+
+* file storage chain
+
+* IoT chain
+    * nothing but the capability to send and receive messages
+    * received messages are kept in a state trie for some time
+    * ulta-light (low bandwith) IoT or mobile devices get proofs of finality periodically
 
 * TCRs of course
+
+* consider reaching out to *Prestwich* with respect to *Riemann* for collaboration on *good* architecture for cross-chain calls
+
+* distributed collation a la Blitz protocol
+    * like Mimblewimble? -- processing transactions in parallel
 
 > some old shit
 
@@ -50,6 +67,8 @@ This repo is my playground for learning Rust.
 
 * wasm
 
+* non-lexical lifetimes
+
 ### Data Structures
 * [urkel tree](https://github.com/handshake-org/urkel)
 * [red black merkle tree](https://github.com/amiller/redblackmerkle)
@@ -70,3 +89,7 @@ This repo is my playground for learning Rust.
 * futures
 * fdlimit
 * exit-future
+
+###### References
+
+* [Aaron Turon: Grappling with growth, and other good problems to have](https://www.youtube.com/watch?v=0sIgVnRAcn0&feature=youtu.be&app=desktop)

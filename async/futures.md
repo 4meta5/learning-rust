@@ -105,11 +105,4 @@ Tokio enables notifications to *wake up* after `Async::NotReady` is returned a `
 * the `tokio-service` crate provides core trait definitions for services. A **service** is a function from requests to futures of responses (therefore, building an http server is just a matter of writing a function from http requests to futures of http responses). CHECK OUT [YOUR SERVER AS A FUNCTION](https://monkey.org/~marius/funsrv.pdf) for inspiration! 
 
 ## Async/Await <a name = "async"></a>
-> going to be implemented in the Rust programming language soon
-
-*What if we want to handle a large number of simultaneous connections, many of which are waiting for I/O, but we want to keep the number of OS threads to a minimum? **The answer is Asynchronous I/O***.
-
-In Asynchronous I/O, we can *attempt* an I/O operation without blocking; if it can't complete immediately, you can retry at some later point.
-
-* [Turon Blog Post](http://aturon.github.io/2018/04/24/async-borrowing/)
-* [@withoutboat blog post](https://boats.gitlab.io/blog/post/2018-04-06-async-await-final/)
+> [notes](./async.md)
