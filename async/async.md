@@ -1,7 +1,7 @@
 # Async/Await Notes
 > going to be implemented in the Rust programming language soon
 
-Async functions return immediately when they are called -- none of the code in their body is executed. They return a future, representing the state machine of their body transitioning from await to await until it finally returns the final value. 
+Async functions return immediately when they are called -- none of the code in their body is executed. They return a future, representing the state machine of their body transitioning from async to await until it finally returns the final value. 
 
 *You always know that none of the body of the async function will be evaluated until you begin polling the future it returns.*
 
@@ -20,7 +20,8 @@ In Asynchronous I/O, we can *attempt* an I/O operation without blocking; if it c
 
 ### References
 
-* [Turon Blog Post](http://aturon.github.io/2018/04/24/async-borrowing/)
-* [@withoutboat blog post](https://boats.gitlab.io/blog/post/2018-04-06-async-await-final/)
+* [Async borrowing by Turon](http://aturon.github.io/2018/04/24/async-borrowing/)
+* [async-await-final by @withoutboats](https://boats.gitlab.io/blog/post/2018-04-06-async-await-final/)
+* [Making progress in await syntax by @withoutboats](https://boats.gitlab.io/blog/post/await-syntax/)
 * [Async in Rust, circa 2018](https://rust-lang-nursery.github.io/wg-net/2018/12/13/async-update.html)
 * [Why Rust's async functions should use the outer return type approach](https://github.com/MajorBreakfast/rust-blog/blob/master/posts/2018-06-19-outer-return-type-approach.md)

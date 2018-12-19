@@ -4,21 +4,18 @@
 * [The What and How of Futures and async/await in Rust](https://www.youtube.com/watch?v=9_3krAQtD2k) by JonHoo
 
 ```
-pub trait Future {
-    type Item;
-    type Error;
-
-    fn poll(&mut self) -> Poll<Self::Item, Self::Error>;
+trait SimpleFuture {
+    type Output;
+    fn poll(&mut self, wake: fn()) -> Poll<Self::Output>;
 }
 
-pub enum Async<T> {
-    Ready(T),
+enum Poll<T> {
+    Ready(T).
     Pending,
 }
 ```
 
-
-**Reference Repos**
+**Future Reference Repos**
 * [rphmeier/honeybadger](https://github.com/rphmeier/honeybadger) -- HoneybadgerBFT in Rust
 * [paritytech/rhododendron](https://github.com/paritytech/rhododendron) -- asynchronously safe BFT consensus, implementation in Rust
 * [withoutboats/romio](https://github.com/withoutboats/romio) -- asynchronous networking primitives

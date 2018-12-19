@@ -106,3 +106,7 @@ Tokio enables notifications to *wake up* after `Async::NotReady` is returned a `
 
 ## Async/Await <a name = "async"></a>
 > [notes](./async.md)
+
+#### ReadingQ
+
+* [Async Book Chapter on Futures](https://rust-lang.github.io/async-book/execution/future.html)
