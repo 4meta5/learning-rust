@@ -13,6 +13,7 @@
     * [`quote`](https://github.com/dtolnay/quote)
     * [`combine`](https://github.com/Marwes/combine)
     * [`nom`](https://github.com/Geal/nom)
+    * [Making Rust Float Parsing Fast and Correct](https://www.reddit.com/r/rust/comments/a6j5j1/making_rust_float_parsing_fast_and_correct/?st=JPQ2J3ZW&sh=cb57fb7f)
 * ffi (calling in `C` code)
 * lock-free and wait-free algorithms
     * [blog post](http://www.rossbencina.com/code/lockfree)
@@ -20,3 +21,6 @@
 * building a domain specific language
     * check out Zokrates
     * [how to roll out custom DSL w/o getting hurt](https://www.slideshare.net/RReverser/building-fast-interpreters-in-rust)
+
+## Code Patterns
+* [Rust Flow](https://myrrlyn.net/blog/misc/rust-flow)

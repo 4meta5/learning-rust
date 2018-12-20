@@ -4,3 +4,5 @@
     * [Seed](https://github.com/David-OConnor/seed) looks worth looking into (inspired by Elm)
 
 * [WASM on the Blockchain: The Lesser Evil](https://medium.com/polkadot-network/wasm-on-the-blockchain-the-lesser-evil-da8d7c6ef6bd)
+
+* [Rust sand WebAssembly in 2019](http://fitzgeraldnick.com/2018/12/14/rust-and-webassembly-in-2019.html)

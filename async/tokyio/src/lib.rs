@@ -208,6 +208,95 @@ impl EventLoop {
                 unsafe { FD_SET(*fd, &mut read_fds as *mut fd_set) };
                 nfds = std::cmp::max(nfds, fd + 1);
             }
+
+            // add write interests to write fd_sets
+            for fd in self.write.borrow().keys() {
+                debug!("added fd {} for write", fd);
+                unsafe { FD_SET(*fd, &mut write_fds as *mut fd_set) };
+                nfds = std::cmp::max(nfds, fd + 1);
+            }
+
+            // select will block until some event happens
+            // on the fds or timeout triggers
+            let rv = unsafe {
+                select(
+                    nfds,
+                    &mut read_fds,
+                    &mut write_fds,
+                    std::ptr::null_mut(),
+                    &mut tv,
+                )
+            };
+
+            // don't care for errors
+            if rv == -1 {
+                panic!("select()");
+            } else if rv == 0 {
+                debug!("timeout");
+            } else {
+                debug!("data available on {} fds", rv);
+            }
+
+            // check which fd it was and put appropriate future on run queue
+            for (fd, waker) in self.read.borrow().iter() {
+                let is_set = unsafe { FD_ISSET(*fd, &mut read_fds as *mut fd_set) };
+                debug!("fd#{} set (read)", fd);
+                if is_set {
+                    waker.wake();
+                }
+            }
+
+            // same for write
+            for (fd, waker) in self.write.borrow().iter() {
+                let is_set = unsafe { FD_ISSET(*fd, &mut write_fds as *mut fd_set) };
+                debug!("fd#{} set (write)", fd);
+                if is_set {
+                    waker.wake();
+                }
+            }
+
+            // now pop wakeup notifications from the run queue and poll associated futures
+            loop {
+                let w = self.run_queue.borrow_mut().pop_front();
+                match w {
+                    Some(w) => {
+                        debug!("polling task#{}", w.index);
+
+                        let task = self.wait_queue.borrow_mut().remove(&w.index);
+                        if let Some(mut task) = task {
+                            // if a task is not ready put it back
+                            if let Poll::Pending = task.poll(w.waker) {
+                                self.wait_queue.borrow_mut().insert(w.index, task);
+                            }
+                            // otherwise just drop it
+                        }
+                    },
+                    None => break,
+                }
+            }
+
+            // stop the loop if no more tasks
+            if self.wait_queue.borrow().is_empty() {
+                return;
+            }
         }
+    }
+}
+
+// reactor handle, just like in real tokio
+pub struct Handle(Rc<EventLoop>);
+
+impl Spawn for Handle {
+    fn spawn_obj(&mut self, f: FutureObj<'static, ()>) -> Result<(), SpawnError> {
+        debug!("spawning from handle");
+        self.0.do_spawn(f);
+        Ok(())
+    }
+}
+
+impl Spawn for EventLoop {
+    fn spawn_obj(&mut self, f: FutureObj<'static, ()>) -> Result<(), SpawnError> {
+        self.do_spawn(f);
+        Ok(())
     }
 }

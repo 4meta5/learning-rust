@@ -135,3 +135,5 @@ With this in mind, the `hello_macro_derive` function is called whenever a user o
 * [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/mbe-README.html)
 
 * [Creating Macros in Rust](https://hub.packtpub.com/creating-macros-in-rust-tutorial/)
+
+* [nymic](https://github.com/myrrlyn/nymic) -- crate for producing the type names of values

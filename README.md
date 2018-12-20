@@ -69,14 +69,6 @@ This repo is my playground for learning Rust.
 
 * non-lexical lifetimes
 
-### Data Structures
-* [urkel tree](https://github.com/handshake-org/urkel)
-* [red black merkle tree](https://github.com/amiller/redblackmerkle)
-* Advanced hash tables -- [Advanced techniques to implement fast hash tables](https://attractivechaos.wordpress.com/2018/10/01/advanced-techniques-to-implement-fast-hash-tables/)
-* Doubly Linked List -- [sol-dllr](https://github.com/skmgoldin/sol-dll/blob/master/contracts/DLL.sol)
-* [Hashlife](https://en.wikipedia.org/wiki/Hashlife) for Conway's Game of Life
-* [Zero-Runtime-Cost Mixed List in Rust](http://nercury.github.io/rust/interesting/2015/12/12/typed-arrays.html)
-
 #### Crates
 * serde; serde_json; serde_derive
 * log
@@ -89,6 +81,9 @@ This repo is my playground for learning Rust.
 * futures
 * fdlimit
 * exit-future
+
+* [zeroize](https://github.com/iqlusioninc/crates/tree/master/zeroize)
+    * securely zero memory while avoiding compiler optimizations
 
 ###### References
 
