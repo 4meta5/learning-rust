@@ -15,7 +15,11 @@ enum Poll<T> {
 }
 ```
 
+* HoneyBadgerBFT implementation (by rphmeier)
+* tokyio (Farenheit) -- simple futures executor for learning purposes
+
 **Future Reference Repos**
+* [Farenheit](https://rust-lang-nursery.github.io/futures-rs/blog/2018/08/17/toykio.html)
 * [rphmeier/honeybadger](https://github.com/rphmeier/honeybadger) -- HoneybadgerBFT in Rust
 * [paritytech/rhododendron](https://github.com/paritytech/rhododendron) -- asynchronously safe BFT consensus, implementation in Rust
 * [withoutboats/romio](https://github.com/withoutboats/romio) -- asynchronous networking primitives
