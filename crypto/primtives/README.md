@@ -18,6 +18,8 @@
 **Merkle Trees**
 * merkle_tree [naive implementation](https://github.com/niklasad1/merkle-tree-rs)
 
+* to implement in Rust -- [Merkle Set](https://github.com/bramcohen/MerkleSet)
+
 **Matrix**
 * [Half Matrix](https://github.com/jojolepro/half-matrix?files=1)
 
