@@ -25,6 +25,10 @@ enum Poll<T> {
 * [withoutboats/romio](https://github.com/withoutboats/romio) -- asynchronous networking primitives
 * [jonhoo/tokio-io-pool](https://github.com/jonhoo/tokio-io-pool) -- an I/O oriented tokio runtime thread pool
 
+**Lock-Free**
+<!--Find out what this means in the context of futures lmao, you're so far behind!!!-->
+[Lock-free Bounded Non-Blocking Pub-Sub Queue](https://github.com/filipdulic/bus-queue)
+
 **Pin Reading**
 * [withoutboats/async_self_referential_structs](https://boats.gitlab.io/blog/post/2018-01-25-async-i-self-referential-structs/)
 * [A Formal Look at Pinning](https://www.ralfj.de/blog/2018/04/05/a-formal-look-at-pinning.html)
