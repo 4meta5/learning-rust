@@ -7,6 +7,10 @@
 * State Machine -- `statemachine.rs`
 * Combinators (`map`, `and_then`) -- `combinators.rs`
 
+**2018 Rust AoC Solutions**
+* [Diggsey/aoc2018](https://github.com/Diggsey/aoc2018)
+* [BurntSushi/advent-of-code](https://github.com/BurntSushi/advent-of-code)
+
 ## Todo
 * parsers and lexers
     * [`syn`](https://github.com/dtolnay/syn)

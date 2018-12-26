@@ -26,5 +26,6 @@ In Asynchronous I/O, we can *attempt* an I/O operation without blocking; if it c
 * [Async in Rust, circa 2018](https://rust-lang-nursery.github.io/wg-net/2018/12/13/async-update.html)
 * [Why Rust's async functions should use the outer return type approach](https://github.com/MajorBreakfast/rust-blog/blob/master/posts/2018-06-19-outer-return-type-approach.md)
 
-* [async-awaitL streaming hyper-body example](https://github.com/tokio-rs/tokio/blob/master/tokio-async-await/examples/src/hyper.rs)
+* [Hexilee/async-io-demo](https://github.com/Hexilee/async-io-demo) -- great demo!
+* [async-await streaming hyper-body example](https://github.com/tokio-rs/tokio/blob/master/tokio-async-await/examples/src/hyper.rs)
 * [warp](https://seanmonstar.com/post/181223452087/warp-v0110) -- solid example code

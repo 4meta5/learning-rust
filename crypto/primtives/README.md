@@ -14,6 +14,7 @@
 **Hash Maps**
 * [The Swiss Army Knife of HashMaps](https://blog.waffles.space/2018/12/07/deep-dive-into-hashbrown/)
     * implementation of HashMap and HashSet for `no_std` environments: [Amanieu repo](https://github.com/Amanieu/hashmap_core)
+* [Concurrent Hash Map](https://docs.rs/chashmap/2.2.0/chashmap/)
 
 **Merkle Trees**
 * merkle_tree [naive implementation](https://github.com/niklasad1/merkle-tree-rs)
