@@ -30,5 +30,9 @@
 
 > great Rust blog for borrowing
 
+* [Currying in Rust: Part 1](https://hashnode.com/post/currying-in-rust-cjpfb0i2z00cm56s2aideuo4z)
+* [Currying in Rust: Part 2](https://hashnode.com/post/currying-in-rust-part-2-a-glimpse-of-generics-cjphbgun90025pms241ggh3d9)
+* [Currying in Rust: Part 3](https://hashnode.com/post/currying-in-rust-part-3-the-circle-of-life-aka-why-borrowchecker-why-cjq3z1dd800dknds1sls4dqav)
+
 * [Stacked Borrows Implemented](https://www.ralfj.de/blog/2018/11/16/stacked-borrows-implementation.html)
 * [Barriers and Two-phase Borrows in Stacked Borrows](https://www.ralfj.de/blog/2018/12/26/stacked-borrows-barriers.html)

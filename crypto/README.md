@@ -5,6 +5,7 @@
 * primtives
     * hashing
     * experimentation with data structures (and relevant notes)
+        * [pdatastructs](https://github.com/crepererum/pdatastructs.rs)
 * algebra
 * erasure
     * shamir's secret sharing scheme (ssss)
