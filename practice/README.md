@@ -18,7 +18,6 @@
     * [`combine`](https://github.com/Marwes/combine)
     * [`nom`](https://github.com/Geal/nom)
     * [Making Rust Float Parsing Fast and Correct](https://www.reddit.com/r/rust/comments/a6j5j1/making_rust_float_parsing_fast_and_correct/?st=JPQ2J3ZW&sh=cb57fb7f)
-* ffi (calling in `C` code)
 * lock-free and wait-free algorithms
     * [blog post](http://www.rossbencina.com/code/lockfree)
     * [jonhoo/bus](https://github.com/jonhoo/bus)
@@ -28,3 +27,8 @@
 
 ## Code Patterns
 * [Rust Flow](https://myrrlyn.net/blog/misc/rust-flow)
+
+> great Rust blog for borrowing
+
+* [Stacked Borrows Implemented](https://www.ralfj.de/blog/2018/11/16/stacked-borrows-implementation.html)
+* [Barriers and Two-phase Borrows in Stacked Borrows](https://www.ralfj.de/blog/2018/12/26/stacked-borrows-barriers.html)
