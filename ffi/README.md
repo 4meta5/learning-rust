@@ -9,3 +9,5 @@
 * [`alexcrichton/rust-ffi-examples`](https://github.com/alexcrichton/rust-ffi-examples/tree/master/rust-to-c)
 
 * [Build Scripts](https://doc.rust-lang.org/cargo/reference/build-scripts.html#outputs-of-the-build-script)
+
+* [Porting C to Rust](https://wiki.alopex.li/PortingCToRust)
