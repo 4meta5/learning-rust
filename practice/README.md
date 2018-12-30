@@ -10,6 +10,7 @@
 **2018 Rust AoC Solutions**
 * [Diggsey/aoc2018](https://github.com/Diggsey/aoc2018)
 * [BurntSushi/advent-of-code](https://github.com/BurntSushi/advent-of-code)
+* [A Rusty Advent of Code](https://cprimozic.net/blog/a-rusty-aoc/) -- really solid walkthrough by Casey Primozic
 
 ## Todo
 * parsers and lexers
@@ -17,6 +18,7 @@
     * [`quote`](https://github.com/dtolnay/quote)
     * [`combine`](https://github.com/Marwes/combine)
     * [`nom`](https://github.com/Geal/nom)
+    * [ds_store parser](https://github.com/sinistersnare/ds_store/blob/master/README.md)
     * [Making Rust Float Parsing Fast and Correct](https://www.reddit.com/r/rust/comments/a6j5j1/making_rust_float_parsing_fast_and_correct/?st=JPQ2J3ZW&sh=cb57fb7f)
 * lock-free and wait-free algorithms
     * [blog post](http://www.rossbencina.com/code/lockfree)

@@ -7,6 +7,7 @@
 * copy on write => either Rc pointers and/or `im` crate
 * check out `petgraph`
 * BTreeMap
+* [segment tree](https://github.com/Darksonn/segment-tree)
 
 **Graph**
 * [Creating an empty iterator of a certain type in Rust](https://www.freedomlayer.org/offst/option-iterator/)

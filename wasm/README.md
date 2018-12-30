@@ -11,3 +11,5 @@
 
 * [nebulet/nebulet](https://github.com/nebulet/nebulet?files=1)
     * Nebulet is a microkernel that executes WebAssembly modules in ring 0 and a single address space to increase performance. This allows for low context-switch overhead, syscalls just being function calls, and exotic optimizations that simply would not be possible on conventional operating systems. The WebAssembly is verified, and due to a trick used to optimize out bounds-checking, unable to even represent the act of writing or reading outside its assigned linear memory.
+
+* [wasmer](https://wasmer.io/) -- build once, run anywhere; universal binaries powered by WebAssembly

@@ -1,16 +1,33 @@
-# Futures
-> Futures provide a robust way of handling asynchronous computation
+# Notes
 
-> [Informal intro to Futures and Tokio by Jon Hoo (Gjengset)](https://www.youtube.com/watch?v=9_3krAQtD2k)
-
-* [Intro](#intro)
+* [Futures](#intro)
     * [Use Cases](#examples)
     * [Streams](#streams)
 * [Tokio](#tokio)
 * [Async/Await](#async)
+    * [Async IO](#io)
 
-## What are Futures <a name = "intro"></a>
+**ReadingQ**
+* [Tokio Internals](https://cafbit.com/post/tokio_internals/) -- very comprehensive
+
+* [Async Book Chapter on Futures](https://rust-lang.github.io/async-book/execution/future.html)
+
+* [Async borrowing by Turon](http://aturon.github.io/2018/04/24/async-borrowing/)
+* [async-await-final by @withoutboats](https://boats.gitlab.io/blog/post/2018-04-06-async-await-final/)
+* [Making progress in await syntax by @withoutboats](https://boats.gitlab.io/blog/post/await-syntax/)
+* [Async in Rust, circa 2018](https://rust-lang-nursery.github.io/wg-net/2018/12/13/async-update.html)
+* [Why Rust's async functions should use the outer return type approach](https://github.com/MajorBreakfast/rust-blog/blob/master/posts/2018-06-19-outer-return-type-approach.md)
+
+* [Hexilee/async-io-demo](https://github.com/Hexilee/async-io-demo) -- great demo!
+* [async-await streaming hyper-body example](https://github.com/tokio-rs/tokio/blob/master/tokio-async-await/examples/src/hyper.rs)
+* [warp](https://seanmonstar.com/post/181223452087/warp-v0110) -- solid example code
+
+## Futures <a name = "intro"></a>
 > [docs](https://docs.rs/futures/0.1.25/futures/)
+
+*Futures provide a robust way of handling asynchronous computation*
+
+> [Informal intro to Futures and Tokio by Jon Hoo (Gjengset)](https://www.youtube.com/watch?v=9_3krAQtD2k)
 
 *Futures are a concept for an object which is a proxy for another value that may not be ready yet. With an object representing a value that will eventually be available, futures allow for powerful composition of tasks through basic combinators that can perform operations like chaining computations, changing the types of futures, or waiting for two futures to complete at the same time.*
 
@@ -39,7 +56,7 @@ The return type of the `Future::poll` method, indicates whether a future's value
 
 Things become very interesting with futures when you combine them:
 * **Sequential composition**: `f.and_then(|val| some_new_future(val))`. Gives you a future that executes the future `f`, takes the `val` it produces to build another future `some_new_future(val)` and then executes that future.
-* **Mapping**: `f.map(|va| some_new_value(val))`. Gives you a future that executes the future `f` and yields the result of `some_new_value(val)`.
+* **Mapping**: `f.map(|val| some_new_value(val))`. Gives you a future that executes the future `f` and yields the result of `some_new_value(val)`.
 * **Joining**: `f.join(g)`. Gives you a future that executes the futures `f` and `g` in parallel, and completes when *both* are complete, returning both of their values.
 * **Selecting**: `f.select(g)`. Gives you a future that executes the future `f` and `g` in parallel, and completes when *one* of them is complete, returning both of their values.
 
@@ -105,8 +122,20 @@ Tokio enables notifications to *wake up* after `Async::NotReady` is returned a `
 * the `tokio-service` crate provides core trait definitions for services. A **service** is a function from requests to futures of responses (therefore, building an http server is just a matter of writing a function from http requests to futures of http responses). CHECK OUT [YOUR SERVER AS A FUNCTION](https://monkey.org/~marius/funsrv.pdf) for inspiration! 
 
 ## Async/Await <a name = "async"></a>
-> [notes](./async.md)
 
-#### ReadingQ
+Async functions return immediately when they are called -- none of the code in their body is executed. They return a future, representing the state machine of their body transitioning from async to await until it finally returns the final value. 
 
-* [Async Book Chapter on Futures](https://rust-lang.github.io/async-book/execution/future.html)
+*You always know that none of the body of the async function will be evaluated until you begin polling the future it returns.*
+
+> "*async/await is not just about avoiding combinators; it completely changes the game for borrowing*" - [Turon](http://aturon.github.io/2018/04/24/async-borrowing/)
+
+**Why do we need `async/await` if we have futures?**
+Although the `Future` trait does not explicitly impose a `'static` bound, futures have to be `'static` because they are not tied to any particular stack frame. This means that futures-based APIs are forced to take ownership of whatever they need, thereby coercing unidiomatic patterns, including threading through ownership as well as the overuse of `Rc` and `RefCell`.
+
+async/await enables the programmer to `await` a future with borrowed data, while still being `'static` overall (@withoutboats refers to this as "borrowing across yield points")...this proposal enables fully idiomatic Rust code that runs asynchronously.
+
+### Async IO <a name = "io"></a>
+
+*What if we want to handle a large number of simultaneous connections, many of which are waiting for I/O, but we want to keep the number of OS threads to a minimum? **The answer is Asynchronous I/O**.
+
+In Asynchronous I/O, we can *attempt* an I/O operation without blocking; if it can't complete immediately, you can retry at some later point.
