@@ -12,6 +12,8 @@
 * [BurntSushi/advent-of-code](https://github.com/BurntSushi/advent-of-code)
 * [A Rusty Advent of Code](https://cprimozic.net/blog/a-rusty-aoc/) -- really solid walkthrough by Casey Primozic
 
+* [Kuhn-Munkres Algorithm Implementation](https://github.com/nwtnni/hungarian) -- I really like this algorithm and someone implemented it in simplified form in Rust!
+
 ## Todo
 * parsers and lexers
     * [`syn`](https://github.com/dtolnay/syn)
