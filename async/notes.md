@@ -22,6 +22,9 @@
 * [async-await streaming hyper-body example](https://github.com/tokio-rs/tokio/blob/master/tokio-async-await/examples/src/hyper.rs)
 * [warp](https://seanmonstar.com/post/181223452087/warp-v0110) -- solid example code
 
+**Great Repo for Async/Await Patterns for Consensus Protocols**
+* [paxos -- Distributed consensus protocol for replicated state machines](https://github.com/nwtnni/paxos)
+
 ## Futures <a name = "intro"></a>
 > [docs](https://docs.rs/futures/0.1.25/futures/)
 
