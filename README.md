@@ -85,6 +85,4 @@ This repo is my playground for learning Rust.
 * [zeroize](https://github.com/iqlusioninc/crates/tree/master/zeroize)
     * securely zero memory while avoiding compiler optimizations
 
-###### References
-
-* [Aaron Turon: Grappling with growth, and other good problems to have](https://www.youtube.com/watch?v=0sIgVnRAcn0&feature=youtu.be&app=desktop)
+* [Rust API Guidelines](https://rust-lang-nursery.github.io/api-guidelines/about.html)

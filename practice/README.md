@@ -20,6 +20,7 @@
     * [`quote`](https://github.com/dtolnay/quote)
     * [`combine`](https://github.com/Marwes/combine)
     * [`nom`](https://github.com/Geal/nom)
+    * [`structopt`](https://crates.io/crates/structopt) for argument parsing
     * [ds_store parser](https://github.com/sinistersnare/ds_store/blob/master/README.md)
     * [Making Rust Float Parsing Fast and Correct](https://www.reddit.com/r/rust/comments/a6j5j1/making_rust_float_parsing_fast_and_correct/?st=JPQ2J3ZW&sh=cb57fb7f)
 * lock-free and wait-free algorithms
@@ -40,3 +41,6 @@
 
 * [Stacked Borrows Implemented](https://www.ralfj.de/blog/2018/11/16/stacked-borrows-implementation.html)
 * [Barriers and Two-phase Borrows in Stacked Borrows](https://www.ralfj.de/blog/2018/12/26/stacked-borrows-barriers.html)
+
+* [Rust API Guidelines](https://rust-lang-nursery.github.io/api-guidelines/about.html)
+    * [Sealed Traits Code Pattern](https://rust-lang-nursery.github.io/api-guidelines/future-proofing.html)

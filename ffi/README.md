@@ -11,3 +11,5 @@
 * [Build Scripts](https://doc.rust-lang.org/cargo/reference/build-scripts.html#outputs-of-the-build-script)
 
 * [Porting C to Rust](https://wiki.alopex.li/PortingCToRust)
+
+* [Refactoring C to Rust: The case of librsvg](https://people.gnome.org/~federico/blog/guadec-2018-presentation.html)
