@@ -85,4 +85,6 @@ This repo is my playground for learning Rust.
 * [zeroize](https://github.com/iqlusioninc/crates/tree/master/zeroize)
     * securely zero memory while avoiding compiler optimizations
 
-* [Rust API Guidelines](https://rust-lang-nursery.github.io/api-guidelines/about.html)
+###### Formal Verification
+
+* [Rust Formal Verification Paradigm](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/311092/paper.pdf?sequence=1&isAllowed=y)

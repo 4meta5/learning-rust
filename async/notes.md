@@ -12,6 +12,8 @@
 
 * [Async Book Chapter on Futures](https://rust-lang.github.io/async-book/execution/future.html)
 
+* **[Turon's Async Rust Book](https://aturon.github.io/apr/)**
+
 * [Async borrowing by Turon](http://aturon.github.io/2018/04/24/async-borrowing/)
 * [async-await-final by @withoutboats](https://boats.gitlab.io/blog/post/2018-04-06-async-await-final/)
 * [Making progress in await syntax by @withoutboats](https://boats.gitlab.io/blog/post/await-syntax/)

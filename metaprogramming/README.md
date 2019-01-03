@@ -139,3 +139,7 @@ With this in mind, the `hello_macro_derive` function is called whenever a user o
 * [nymic](https://github.com/myrrlyn/nymic) -- crate for producing the type names of values
 
 * [Procedural Macros in Rust 2018](https://blog.rust-lang.org/2018/12/21/Procedural-Macros-in-Rust-2018.html)
+
+* [Deriving Traits in Rust with Procedural Macros](https://naftuli.wtf/2019/01/02/rust-derive-macros/)
+
+* [`adhesion-rs`](https://github.com/ErichDonGubler/adhesion-rs) -- D-inspired contract programming in Rust using macros
