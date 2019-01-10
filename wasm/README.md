@@ -2,6 +2,12 @@
 
 > great metalink: **[Reflecting on Rust and WASM in 2018](https://rustwasm.github.io/2018/12/06/reflecting-on-rust-and-wasm-in-2018.html)**
 
+## Getting Started
+* [A Cartoon Intro to WebAssembly](https://hacks.mozilla.org/2017/02/a-cartoon-intro-to-webassembly/)
+* [Understanding WebAssembly text format](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format)
+* [Introduction to WebAssembly](https://rsms.me/wasm-intro)
+
+## More
 * [Rust WASM frontend framework comparison](https://github.com/flosse/rust-web-framework-comparison/blob/master/README.md#frontend-frameworks-wasm)
     * [Seed](https://github.com/David-OConnor/seed) looks worth looking into (inspired by Elm)
 

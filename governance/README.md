@@ -2,6 +2,7 @@
 
 > idea: blockchain for managing rfc process for a language — permissionless; tokens to weight upvotes, comments, etc....propose a bootstrapping mechanism w/ core members on the council
 
+* [Rust in 2019: Focus on sustainability](http://smallcultfollowing.com/babysteps/blog/2019/01/07/rust-in-2019-focus-on-sustainability/) -- smallcultfollowing
 
 * [really good `This week in Rust`](https://this-week-in-rust.org/blog/2018/12/11/this-week-in-rust-264/)
 
