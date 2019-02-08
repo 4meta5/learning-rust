@@ -55,6 +55,9 @@ This repo is my playground for learning Rust.
     3. eventually, I want to implement **proxy re-encryption** in Rust (think NuCypher and Umbral)...here's parity's [implementation](https://github.com/paritytech/xpremtinel)
 
 ## Code Patterns
+
+* [Vorner's Rust Hacks](https://vorner.github.io/2019/02/03/hacks.html)
+
 * lazy evaluation with dynamic cacher...using [lazy-static.rs](https://github.com/rust-lang-nursery/lazy-static.rs)
 
 * using serde with untrusted (look at Parity code and the ring library)...substrate/core/primitives/ed25519

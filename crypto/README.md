@@ -16,3 +16,7 @@
     * [The Codes of Solomon, Reed and Muller](https://jeremykun.com/2015/03/23/the-codes-of-solomon-reed-and-muller/) -- Jeremy Kun (read the two articles before as well on Information Theory and Hamming Codes)
 * Zero Knowledge Practice *(consider making into own repo)*
 * MPC practice *(consider making into own repo)*
+
+## Resources
+
+* [Auditing Rust Crypto the First Hours](https://research.kudelskisecurity.com/2019/02/07/auditing-rust-crypto-the-first-hours/) by Kudelski Security

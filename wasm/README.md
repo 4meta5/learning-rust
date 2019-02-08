@@ -1,5 +1,11 @@
 # WASM Notes and Code
 
+> [disorganized notes](./Rusty_WASM.md)
+
+*PreReqs*
+* [Rust, the book](https://doc.rust-lang.org/book/)
+* [HTML, CSS](https://developer.mozilla.org/en-US/docs/Learn)
+
 > great metalink: **[Reflecting on Rust and WASM in 2018](https://rustwasm.github.io/2018/12/06/reflecting-on-rust-and-wasm-in-2018.html)**
 
 ## Getting Started
@@ -7,7 +13,9 @@
 * [Understanding WebAssembly text format](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format)
 * [Introduction to WebAssembly](https://rsms.me/wasm-intro)
 
-## More
+* [WebAssembly Troubles part 1: WebAssembly Is Not a Stack Machine](http://troubles.md/posts/wasm-is-not-a-stack-machine/)
+
+## Resources
 * [Rust WASM frontend framework comparison](https://github.com/flosse/rust-web-framework-comparison/blob/master/README.md#frontend-frameworks-wasm)
     * [Seed](https://github.com/David-OConnor/seed) looks worth looking into (inspired by Elm)
 
@@ -23,3 +31,4 @@
 * [wasmer](https://wasmer.io/) -- build once, run anywhere; universal binaries powered by WebAssembly
 
 * [React/Redux style programming in Rust](https://github.com/richardanaya/virtual-dom-rs-counter/blob/master/README.md)
+* [redux-rs](https://github.com/redux-rs/redux-rs)

@@ -15,3 +15,5 @@
 * [Aaron Turon: Grappling with growth, and other good problems to have](https://www.youtube.com/watch?v=0sIgVnRAcn0&feature=youtu.be&app=desktop)
 
 * [The Need to Formalize Governance](http://mgattozzi.com/rust-in-2019-the-next-year-and-edition/)
+
+* [Rust Governance: Scaling Empathy](https://manishearth.github.io/blog/2019/02/04/rust-governance-scaling-empathy/) - 2/4/2019

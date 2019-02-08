@@ -3,14 +3,20 @@
 Notes from [Rust and WebAssembly](https://rustwasm.github.io/book/#how-to-read-this-book). May also add notes from [The Rusty Web](https://davidmcneil.github.io/the-rusty-web/). 
 
 * [Review](#review)
-* [Book](#book)
+* [Rust WASM Official Book](#official)
+* [Rusy WASM](#book)
 * [The Rusty Web](#rustyweb)
 
 ## Reviewing JavaScript, HTML, CSS <a name="review"></a>
 
 > [Mozilla Docs](https://developer.mozilla.org/en-US/docs/Learn)
 
-## Rusty WASM Book <a name+"book"></a>
+## Rust WASM Official Book <a name="official"></a>
+> [motivation](https://rustwasm.github.io/book/why-rust-and-webassembly.html), [background](https://rustwasm.github.io/book/background-and-concepts.html)
+
+
+
+## Rusty WASM Book <a name="book"></a>
 
 > [Setup](https://rustwasm.github.io/book/game-of-life/setup.html)
 

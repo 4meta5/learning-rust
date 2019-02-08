@@ -1,11 +1,14 @@
 # Error Handling
 
-* [OpenGL in Rust from Scratch with the Failure Crate](https://nercury.github.io/rust/opengl/tutorial/2018/02/15/opengl-in-rust-from-scratch-08-failure.html)
+At this point, there are a few options:
 
-* [Starting with ErrorChain](https://brson.github.io/2016/11/30/starting-with-error-chain)
+* if you return `Result<_, Box<Error>>`, any result with an error type that implements Error is usable with `?`.
+* You can use `map_err` to map to a single type, such as formatting an error string in each case
+* a common pattern is to define your own error enum (implementing `Error` on it) that wraps internal error types, implement `From<E>` for every internal error type possible.
 
-* [`ignore-result` crate](https://neosmart.net/blog/2018/rust-ignore-result/)
+> this pattern is made ergonomic by [`failure`](#fail) and [`error_chain`](#err)
 
+## Pattern w/o `failure` or `error_chain`
 
 > [reddit comment from ghostopera](https://www.reddit.com/r/rust/comments/a9wbs8/comment/ecnosdi/?st=JQ6PFPK9&sh=9214a765):
 
@@ -102,3 +105,14 @@ The causing error will get wrapped up in a Box. Since by that point, there is ve
 Global context can be included in the error struct itself, and specific context can be provided in the kinds.
 
 Interesting side note... I've found that those big Error enums that wrap up all the causes can introduce a notable increase in compile time vs sticking the cause on the heap like above.
+
+## `failure` <a name = "fail"></a>
+
+* [OpenGL in Rust from Scratch with the Failure Crate](https://nercury.github.io/rust/opengl/tutorial/2018/02/15/opengl-in-rust-from-scratch-08-failure.html)
+
+
+## `error_chain` <a name = "err"></a>
+
+* [Starting with ErrorChain](https://brson.github.io/2016/11/30/starting-with-error-chain)
+
+* [`ignore-result` crate](https://neosmart.net/blog/2018/rust-ignore-result/)

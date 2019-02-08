@@ -16,6 +16,7 @@
 
 ## Todo
 * parsers and lexers
+    * [read this first and then do the tutorial](http://lalrpop.github.io/lalrpop/crash_course.html)
     * [`syn`](https://github.com/dtolnay/syn)
     * [`quote`](https://github.com/dtolnay/quote)
     * [`combine`](https://github.com/Marwes/combine)
@@ -24,6 +25,7 @@
     * [ds_store parser](https://github.com/sinistersnare/ds_store/blob/master/README.md)
     * [Making Rust Float Parsing Fast and Correct](https://www.reddit.com/r/rust/comments/a6j5j1/making_rust_float_parsing_fast_and_correct/?st=JPQ2J3ZW&sh=cb57fb7f)
 * lock-free and wait-free algorithms
+    * `parking_lot`, `hash-brown`
     * [blog post](http://www.rossbencina.com/code/lockfree)
     * [jonhoo/bus](https://github.com/jonhoo/bus)
 * building a domain specific language
