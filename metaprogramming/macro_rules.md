@@ -1,7 +1,5 @@
 # Macro_Rules
 
-> this is really just a way to better organize my notes from the Little Macro Book (instead of keeping all notes in that README.md)
-
 `macro_rules!` has the following form
 
 ```

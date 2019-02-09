@@ -1,9 +1,9 @@
 # Practice
 > Some practice code patterns that I found(/find) useful when learning Rust
 
-* Linked List -- `linkedlist.rs`
-* Macros Pratice -- `recurrence.rs`
-* Conversion for practicing `From` and `Into` -- `conversion.rs`
+* Linked List -- [`linkedlist.rs`](./simple/linkedlist.rs)
+* Macros Pratice -- [`recurrence.rs`](./simple/recurrence.rs)
+* Conversion for practicing `From` and `Into` -- [`conversion.rs`](./simple/conversion.rs)
 * State Machine -- `statemachine.rs`
 * Combinators (`map`, `and_then`) -- `combinators.rs`
 

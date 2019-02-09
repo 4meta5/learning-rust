@@ -1,5 +1,5 @@
 # Futures => Async/Await
-> [notes](./futures.md)
+> [notes](./notes.md)
 
 * [The What and How of Futures and async/await in Rust](https://www.youtube.com/watch?v=9_3krAQtD2k) by JonHoo
 

@@ -14,6 +14,17 @@ Notes from [Rust and WebAssembly](https://rustwasm.github.io/book/#how-to-read-t
 ## Rust WASM Official Book <a name="official"></a>
 > [motivation](https://rustwasm.github.io/book/why-rust-and-webassembly.html), [background](https://rustwasm.github.io/book/background-and-concepts.html)
 
+JavaScript's garbage-collected heap — where Objects, Arrays, and DOM nodes are allocated — is distinct from WebAssembly's linear memory space, where our Rust values live. WebAssembly currently has no direct access to the garbage-collected heap (as of April 2018, this is expected to change with the "host bindings" proposal). JavaScript, on the other hand, can read and write to the WebAssembly linear memory space, but only as an ArrayBuffer of scalar values (u8, i32, f64, etc...). WebAssembly functions also take and return scalar values. These are the building blocks from which all WebAssembly and JavaScript communication is constituted.
+
+> `wasm_bindgen` defines a common understanding of how to work with compound structures across this boundary. It involves boxing Rust structures, and wrapping the pointer in a JavaScript class for usability, or indexing into a table of JavaScript objects from Rust.
+
+>  `wasm_bindgen` helps us define and work with opaque handles to JavaScript Objects or boxed Rust structures.
+
+When designing an interface between WASM and JS, optimize for:
+1. Minimize copying into and out of the WASM linear memory (unnecessary copies impose unnecessary overhead)
+2. Minimizing serializing and deserializing (serializing/deserializing impose overhead)
+
+> almost sounds like blockchain interaction (using data structures like merkle trees for compression/verification)
 
 
 ## Rusty WASM Book <a name="book"></a>

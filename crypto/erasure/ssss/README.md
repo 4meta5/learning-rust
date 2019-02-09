@@ -1,4 +1,5 @@
 # Shamir's Secret Sharing Scheme
+> see related [Information Theory Notes](https://github.com/AmarRSingh/notes/tree/master/Cryptography/InformationTheory)
 
 We can split a secret into `n` parts -- called secret shares -- and distribute them to different places/people. Later, we only need to collect `k` (`k > 0` and `k <= n`) secret shares to recover the original secret (`k` is the threshold).
 

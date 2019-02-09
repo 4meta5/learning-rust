@@ -1,4 +1,4 @@
-# Notes
+# `Futures` and Asynchronous Patterns Notes
 
 * [Futures](#intro)
     * [Use Cases](#examples)

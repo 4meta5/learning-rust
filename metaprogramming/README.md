@@ -1,8 +1,4 @@
 # Metaprogramming
-
-> basically just some notes on Rust Macros and best practices
-
-## Some Background
 > [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/mbe-README.html)
 
 Stages of compilation:

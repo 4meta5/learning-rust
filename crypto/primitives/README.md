@@ -1,5 +1,7 @@
-# Primtives
+# Cryptographic Primitives
 > data structures, hashing, etc.
+
+> [probabilistic data structures](https://github.com/crepererum/pdatastructs.rs)
 
 **Tree**
 * immutable tree => use `Vec` and refer to items by index
