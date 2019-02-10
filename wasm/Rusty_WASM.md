@@ -14,21 +14,26 @@ Notes from [Rust and WebAssembly](https://rustwasm.github.io/book/#how-to-read-t
 ## Rust WASM Official Book <a name="official"></a>
 > [motivation](https://rustwasm.github.io/book/why-rust-and-webassembly.html), [background](https://rustwasm.github.io/book/background-and-concepts.html)
 
-JavaScript's garbage-collected heap — where Objects, Arrays, and DOM nodes are allocated — is distinct from WebAssembly's linear memory space, where our Rust values live. WebAssembly currently has no direct access to the garbage-collected heap (as of April 2018, this is expected to change with the "host bindings" proposal). JavaScript, on the other hand, can read and write to the WebAssembly linear memory space, but only as an ArrayBuffer of scalar values (u8, i32, f64, etc...). WebAssembly functions also take and return scalar values. These are the building blocks from which all WebAssembly and JavaScript communication is constituted.
+JavaScript's garbage-collected heap is distinct from WebAssembly's linear memory space (which is where the Rust values live). Although WebAssembly currently has no direct access to the garbage-collected heap, JavaScript can read and write to the WebAssembly linear memory space (but only as an ```ArrayBuffer```); likewise, WebAssembly functions also take and return scalar values. 
 
-> `wasm_bindgen` defines a common understanding of how to work with compound structures across this boundary. It involves boxing Rust structures, and wrapping the pointer in a JavaScript class for usability, or indexing into a table of JavaScript objects from Rust.
+```wasm-bindgen``` defines a common understanding of how to work with compound structures across the Rust-WASM-JavaScript communication paradigm. This entails boxing Rust structures and wrapping the pointer in a JavaScript class for usability. The ```wasm-bindgen``` crate is useful but does not necessarily remove the need for considering our data representation.
 
->  `wasm_bindgen` helps us define and work with opaque handles to JavaScript Objects or boxed Rust structures.
+When designing an interface between WASM and JavaScript, we want to optimize the following properties:
+1. Minimizing copying into and out of the WebAssembly linear memory
+2. Minimizing serializing and deserializing
 
-When designing an interface between WASM and JS, optimize for:
-1. Minimize copying into and out of the WASM linear memory (unnecessary copies impose unnecessary overhead)
-2. Minimizing serializing and deserializing (serializing/deserializing impose overhead)
+> In general, a good JavaScript--WASM interface design entails architecting large, long-lived data structures implemented as Rust types that live in WASM linear memory and are exposed to JavaScript via opaque handles `=>` **goal**: minimize copying and/or serializing everything back and forth between the JavaScript garbage-collected heap and the WASM linear memory
 
-> almost sounds like blockchain interaction (using data structures like merkle trees for compression/verification)
+JavaScript calls exported WASM functions and takes the opaque handles, transforms the data, performs heavy computations, queries the data, and returns a small, copy-able result. By only returning the small result of computation, we avoid copying and/or serializing everything back and forth between the JavaScript garbage-collected heap and the WASM linear memory.
+
+Generally, good JS <-> WASM interface design requires storing large, long-living data structures as Rust types that live in the WASM linear memory and are exposed to JS as opaque handles. JS calls exported WASM functions that take these opaque handles, transform their data, perform heavy computations, query the data, and ultimately reqturn a small, copy-able result.
+
+> [relevant crates](https://rustwasm.github.io/book/reference/crates.html)
+> [relevant tools](https://rustwasm.github.io/book/reference/tools.html)
+> [templates](https://rustwasm.github.io/book/reference/project-templates.html)
 
 
-## Rusty WASM Book <a name="book"></a>
-
+### Setup <a name = "setup"></a>
 > [Setup](https://rustwasm.github.io/book/game-of-life/setup.html)
 
 We use ```wasm-pack``` to orchestrate the following:
@@ -88,23 +93,6 @@ npm link wasm-game-of-life
 ```
 
 Within ```www/```, we run ```npm run start``` in another terminal and the site will be served at ```htttp://localhost:8080/```.
-
-### Interfacing Rust and JavaScript
-JavaScript's garbage-collected heap is distinct from WebAssembly's linear memory space (which is where the Rust values live). Although WebAssembly currently has no direct access to the garbage-collected heap, JavaScript can read and write to the WebAssembly linear memory space (but only as an ```ArrayBuffer```); likewise, WebAssembly functions also take and return scalar values. 
-
-```wasm-bindgen``` defines a common understanding of how to work with compound structures across the Rust-WASM-JavaScript communication paradigm. This entails boxing Rust structures and wrapping the pointer in a JavaScript class for usability. The ```wasm-bindgen``` crate is useful but does not necessarily remove the need for considering our data representation.
-
-When designing an interface between WASM and JavaScript, we want to optimize the following properties:
-1. Minimizing copying into and out of the WebAssembly linear memory
-2. Minimizing serializing and deserializing
-
-> In general, a good JavaScript--WASM interface design entails architecting large, long-lived data structures implemented as Rust types that live in WASM linear memory and are exposed to JavaScript via opaque handles.
-
-JavaScript calls exported WASM functions and takes the opaque handles, transforms the data, performs heavy computations, queries the data, and returns a small, copy-able result. By only returning the small result of computation, we avoid copying and/or serializing everything back and forth between the JavaScript garbage-collected heap and the WASM linear memory.
-
-> [relevant crates](https://rustwasm.github.io/book/reference/crates.html)
-> [relevant tools](https://rustwasm.github.io/book/reference/tools.html)
-> [templates](https://rustwasm.github.io/book/reference/project-templates.html)
 
 
 ## The Rusty Web <a name="rustyweb"></a>
