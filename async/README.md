@@ -1,5 +1,5 @@
 # Futures => Async/Await
-> [notes](./notes.md)
+> [`futures`, `async/await`](./notes.md), [networking](./networking.md)
 
 * [The What and How of Futures and async/await in Rust](https://www.youtube.com/watch?v=9_3krAQtD2k) by JonHoo
 
@@ -27,7 +27,10 @@ enum Poll<T> {
 
 **Lock-Free**
 <!--Find out what this means in the context of futures lmao, you're so far behind!!!-->
-[Lock-free Bounded Non-Blocking Pub-Sub Queue](https://github.com/filipdulic/bus-queue)
+* [Lock-free Bounded Non-Blocking Pub-Sub Queue](https://github.com/filipdulic/bus-queue)
+    * `parking_lot`, `hash-brown`
+    * [blog post](http://www.rossbencina.com/code/lockfree)
+    * [jonhoo/bus](https://github.com/jonhoo/bus)
 
 **Pin Reading**
 * [withoutboats/async_self_referential_structs](https://boats.gitlab.io/blog/post/2018-01-25-async-i-self-referential-structs/)

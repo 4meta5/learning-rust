@@ -16,6 +16,8 @@
 * [WebAssembly Troubles part 1: WebAssembly Is Not a Stack Machine](http://troubles.md/posts/wasm-is-not-a-stack-machine/)
 
 ## Resources
+> picking up heat: **[wasmer](https://wasmer.io/) -- build once, run anywhere; universal binaries powered by WebAssembly**
+
 * [Rust WASM frontend framework comparison](https://github.com/flosse/rust-web-framework-comparison/blob/master/README.md#frontend-frameworks-wasm)
     * [Seed](https://github.com/David-OConnor/seed) looks worth looking into (inspired by Elm)
 
@@ -27,8 +29,6 @@
 
 * [nebulet/nebulet](https://github.com/nebulet/nebulet?files=1)
     * Nebulet is a microkernel that executes WebAssembly modules in ring 0 and a single address space to increase performance. This allows for low context-switch overhead, syscalls just being function calls, and exotic optimizations that simply would not be possible on conventional operating systems. The WebAssembly is verified, and due to a trick used to optimize out bounds-checking, unable to even represent the act of writing or reading outside its assigned linear memory.
-
-* [wasmer](https://wasmer.io/) -- build once, run anywhere; universal binaries powered by WebAssembly
 
 * [React/Redux style programming in Rust](https://github.com/richardanaya/virtual-dom-rs-counter/blob/master/README.md)
 * [redux-rs](https://github.com/redux-rs/redux-rs)
