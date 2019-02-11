@@ -4,7 +4,7 @@ Notes from [Rust and WebAssembly](https://rustwasm.github.io/book/#how-to-read-t
 
 * [Review](#review)
 * [Rust WASM Official Book](#official)
-* [Rusy WASM](#book)
+* [`wasm-bindgen` setup (under the hood)](#setup)
 * [The Rusty Web](#rustyweb)
 
 ## Reviewing JavaScript, HTML, CSS <a name="review"></a>
@@ -28,10 +28,16 @@ JavaScript calls exported WASM functions and takes the opaque handles, transform
 
 Generally, good JS <-> WASM interface design requires storing large, long-living data structures as Rust types that live in the WASM linear memory and are exposed to JS as opaque handles. JS calls exported WASM functions that take these opaque handles, transform their data, perform heavy computations, query the data, and ultimately reqturn a small, copy-able result.
 
+We can directly access WebAssembly's linear memory via `memory`, which is defined in the raw wasm module `wasm_game_of_life_bg`.
+
 > [relevant crates](https://rustwasm.github.io/book/reference/crates.html)
 > [relevant tools](https://rustwasm.github.io/book/reference/tools.html)
 > [templates](https://rustwasm.github.io/book/reference/project-templates.html)
 
+To check if an arbitrary Rust crate compiles down to WASM, just run `cargo run` for the WASM target:
+```
+cargo build --target wasm32-unknown-unknown
+```
 
 ### Setup <a name = "setup"></a>
 > [Setup](https://rustwasm.github.io/book/game-of-life/setup.html)

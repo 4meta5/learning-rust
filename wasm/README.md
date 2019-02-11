@@ -1,6 +1,5 @@
 # WASM Notes and Code
-
-> [disorganized notes](./Rusty_WASM.md)
+> [notes](./notes.md)
 
 *PreReqs*
 * [Rust, the book](https://doc.rust-lang.org/book/)
@@ -18,8 +17,13 @@
 ## Resources
 > picking up heat: **[wasmer](https://wasmer.io/) -- build once, run anywhere; universal binaries powered by WebAssembly**
 
+* **[`wasm-bindgen` book](https://rustwasm.github.io/wasm-bindgen/introduction.html)**; [pretty cool interactive tutorial](https://webassembly.studio/?f=gzubao6tg3)
+
+* [Continuous Integration for WebAssembly](https://rustwasm.github.io/book/reference/add-wasm-support-to-crate.html#maintaining-ongoing-support-for-webassembly)
+* [Testing on `wasn32-unknown-unknown` with `wasm-bindgen-test`](https://rustwasm.github.io/wasm-bindgen/wasm-bindgen-test/index.html)
+
 * [Rust WASM frontend framework comparison](https://github.com/flosse/rust-web-framework-comparison/blob/master/README.md#frontend-frameworks-wasm)
-    * [Seed](https://github.com/David-OConnor/seed) looks worth looking into (inspired by Elm)
+    * [Seed](https://github.com/David-OConnor/seed) (inspired by Elm)
 
 * [WASM on the Blockchain: The Lesser Evil](https://medium.com/polkadot-network/wasm-on-the-blockchain-the-lesser-evil-da8d7c6ef6bd)
 
