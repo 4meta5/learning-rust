@@ -1,6 +1,7 @@
 # Rust Playground
+An organized collection of Rust resources
 
-Playground for learning Rust
+> [brson/rust-anthology](https://github.com/brson/rust-anthology/blob/master/master-list.md), [ctjhoa/rust-learning](https://github.com/ctjhoa/rust-learning)
 
 * [`Futures` and Asynchronous Patterns](./async)
     * [Resources and Notes](./async/notes.md)
@@ -11,7 +12,6 @@ Playground for learning Rust
         * for conceptual background on information theory, see [notes metalink](https://github.com/AmarRSingh/notes/tree/master/Cryptography/InformationTheory)
 * [Error-Handling](./error)
 * [Foreign Function Interface](./ffi)
-* [Heap Allocation](./heap)
 * [Macros](./metaprogramming)
 * [Practice](./practice)
     * *Basics*
@@ -21,10 +21,9 @@ Playground for learning Rust
         * [`statemachine.rs`](./simple/src/statemachine.rs): Rust state machine pattern by [Hoverbear](https://hoverbear.org/2016/10/12/rust-state-machine-pattern/)
         * [`combinators.rs`](./simple/src/combinator.rs): basic syntax and patterns for combinators (`map`, `and_then`)
     * **[Code Patterns](./practice/README.md#pattern)**
-* [Serialization](./serialization)
-    * [basic JSON implementation with serde](./serialization/serializer/src/lib.rs)
-* [SIMD](./simd)
-* [WASM](./wasm)
+    * [Serialization](./practice/serialization)
+        * [basic JSON implementation with serde](./practice/serialization/serializer/src/lib.rs)
+* [WASM (and JS interaction with Rust)](./wasm)
     * [notes](./wasm/Rusty_WASM.md)
 
 > Extra: [Rust Governance](./governance)

@@ -16,3 +16,8 @@
 * [`jonhoo/tokio-io-pool`](https://github.com/jonhoo/tokio-io-pool) - IO-oriented tokio runtime thread pool
 
 * [`firecracker-microvm`](https://github.com/firecracker-microvm/firecracker) -- secure and fast microVMs for serverless computing
+
+## Fearless Concurrency
+
+* [SIMD Intrinsics (Video)](https://www.youtube.com/watch?v=4Gs_CA_vm3o&app=desktop)
+* [Crossbeam Channel](https://github.com/crossbeam-rs/crossbeam/blob/master/crossbeam-channel/README.md) -- provides multi-producer multi-consumer channels for message passing. It is an alternative to `std::sync::mpsc` with more features and better performance.

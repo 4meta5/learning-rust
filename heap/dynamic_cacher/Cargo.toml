@@ -1,8 +1,0 @@
-[package]
-name = "dynamic_cacher"
-version = "0.1.0"
-authors = ["Amar Singh <asinghchrony@protonmail.com>"]
-edition = "2018"
-
-[dependencies]
-lazy_static = "1.2.0"
