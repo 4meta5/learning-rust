@@ -3,6 +3,8 @@
 
 * [The What and How of Futures and async/await in Rust](https://www.youtube.com/watch?v=9_3krAQtD2k) by JonHoo
 
+* [Ferrous Systems -- TCP Server Course in Rust](https://github.com/ferrous-systems/rust-three-days-course)
+
 ```
 trait SimpleFuture {
     type Output;
@@ -27,10 +29,11 @@ enum Poll<T> {
 
 **Lock-Free**
 <!--Find out what this means in the context of futures lmao, you're so far behind!!!-->
-* [Lock-free Bounded Non-Blocking Pub-Sub Queue](https://github.com/filipdulic/bus-queue)
+* [Bus-queueL Lock-free Bounded Non-Blocking Pub-Sub Queue](https://github.com/filipdulic/bus-queue)
     * `parking_lot`, `hash-brown`
     * [blog post](http://www.rossbencina.com/code/lockfree)
     * [jonhoo/bus](https://github.com/jonhoo/bus)
+* [Rust concurrency checker](https://github.com/carllerche/loom)
 
 **Pin Reading**
 * [withoutboats/async_self_referential_structs](https://boats.gitlab.io/blog/post/2018-01-25-async-i-self-referential-structs/)

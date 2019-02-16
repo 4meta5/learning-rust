@@ -1,5 +1,20 @@
 # Metaprogramming
-> [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/mbe-README.html)
+> Rust macros
+
+* [The Rust Book - Appendix on Macros](https://doc.rust-lang.org/book/second-edition/appendix-04-macros.html)
+* [Rust by Example: Macros](https://doc.rust-lang.org/rust-by-example/macros.html)
+* [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/mbe-README.html)
+
+* [Creating Macros in Rust Tutorial](https://hub.packtpub.com/creating-macros-in-rust-tutorial/)
+* [Procedural Macros in Rust 2018](https://blog.rust-lang.org/2018/12/21/Procedural-Macros-in-Rust-2018.html)
+* [Deriving Traits in Rust with Procedural Macros](https://naftuli.wtf/2019/01/02/rust-derive-macros/)
+
+*Examples*
+* [nymic](https://github.com/myrrlyn/nymic) -- crate for producing the type names of values
+* [`adhesion-rs`](https://github.com/ErichDonGubler/adhesion-rs) -- D-inspired contract programming in Rust using macros
+* [`ynek317/shellfn`](https://github.com/synek317/shellfn) -- Rust proc macro for easily and safely use shell scripts in Rust
+
+## Notes
 
 Stages of compilation:
 1. **tokenisation**: source text is transformed into a sequence of tokens (ie indivisible units)
@@ -123,19 +138,3 @@ Essentially we'll change what we put where the `impl_hello_macro` is called depe
 * the `quote` crate takes `syn` data structures and turns them back into Rust code
 
 With this in mind, the `hello_macro_derive` function is called whenever a user of our library specifies `#[derive(HelloMacro)]` on a type. 
-
-### References
-
-* [The Rust Book - Appendix on Macros](https://doc.rust-lang.org/book/second-edition/appendix-04-macros.html)
-* [Rust by Example: Macros](https://doc.rust-lang.org/rust-by-example/macros.html)
-* [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/mbe-README.html)
-
-* [Creating Macros in Rust](https://hub.packtpub.com/creating-macros-in-rust-tutorial/)
-
-* [nymic](https://github.com/myrrlyn/nymic) -- crate for producing the type names of values
-
-* [Procedural Macros in Rust 2018](https://blog.rust-lang.org/2018/12/21/Procedural-Macros-in-Rust-2018.html)
-
-* [Deriving Traits in Rust with Procedural Macros](https://naftuli.wtf/2019/01/02/rust-derive-macros/)
-
-* [`adhesion-rs`](https://github.com/ErichDonGubler/adhesion-rs) -- D-inspired contract programming in Rust using macros

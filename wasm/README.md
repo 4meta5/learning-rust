@@ -1,6 +1,15 @@
 # WASM Notes and Code
 > [notes](./notes.md)
 
+Picking up heat: 
+1. **[Seed-rs](https://github.com/David-OConnor/seed)** (inspired by Elm)
+    * [good examples here](https://github.com/David-OConnor)
+2. **[wasmer](https://wasmer.io/) -- build once, run anywhere; universal binaries powered by WebAssembly**
+* alternative to [paritytech/wasmi](https://github.com/paritytech/wasmi)
+3. **[`wasm-bindgen` book](https://rustwasm.github.io/wasm-bindgen/introduction.html)**; [pretty cool interactive tutorial](https://webassembly.studio/?f=gzubao6tg3)
+4. [`paritytech/wasmi`: wasm interepreter in Rust](https://github.com/paritytech/wasmi)
+5. [`wasmparser.rs`: event-driven library for parsing WASM binary files](https://github.com/yurydelendik/wasmparser.rs)
+
 *PreReqs*
 * [Rust, the book](https://doc.rust-lang.org/book/)
 * [HTML, CSS](https://developer.mozilla.org/en-US/docs/Learn)
@@ -15,15 +24,15 @@
 * [WebAssembly Troubles part 1: WebAssembly Is Not a Stack Machine](http://troubles.md/posts/wasm-is-not-a-stack-machine/)
 
 ## Resources
-> picking up heat: **[wasmer](https://wasmer.io/) -- build once, run anywhere; universal binaries powered by WebAssembly**
 
-* **[`wasm-bindgen` book](https://rustwasm.github.io/wasm-bindgen/introduction.html)**; [pretty cool interactive tutorial](https://webassembly.studio/?f=gzubao6tg3)
+ * [schnorrkel-js: a JS wrapper for schnorrkel sigs on Ristretto using WASM](https://github.com/paritytech/schnorrkel-js)
+
+* [Threads and Atomics in WebAssembly](https://github.com/WebAssembly/threads)
 
 * [Continuous Integration for WebAssembly](https://rustwasm.github.io/book/reference/add-wasm-support-to-crate.html#maintaining-ongoing-support-for-webassembly)
 * [Testing on `wasn32-unknown-unknown` with `wasm-bindgen-test`](https://rustwasm.github.io/wasm-bindgen/wasm-bindgen-test/index.html)
 
 * [Rust WASM frontend framework comparison](https://github.com/flosse/rust-web-framework-comparison/blob/master/README.md#frontend-frameworks-wasm)
-    * [Seed](https://github.com/David-OConnor/seed) (inspired by Elm)
 
 * [WASM on the Blockchain: The Lesser Evil](https://medium.com/polkadot-network/wasm-on-the-blockchain-the-lesser-evil-da8d7c6ef6bd)
 

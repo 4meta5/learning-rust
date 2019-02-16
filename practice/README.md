@@ -17,6 +17,7 @@
 * [PL Building](#pl)
 * [Currying](#curry)
 * [Formal Verification](#verify)
+* [Blockchain](#blockchain)
 
 ### Tricks <a name = "tricks"></a>
 
@@ -26,6 +27,7 @@
 * [Rust API Guidelines](https://rust-lang-nursery.github.io/api-guidelines/about.html)
     * [Sealed Traits Code Pattern](https://rust-lang-nursery.github.io/api-guidelines/future-proofing.html)
 
+* [Example of Interaction with IPFS in Rust](https://github.com/kpcyrd/ipfs.ink)
 
 ### 108 Advent of Code Solutions <a name = "aoc"></a>
 * [Diggsey/aoc2018](https://github.com/Diggsey/aoc2018)
@@ -69,3 +71,22 @@
 * [Barriers and Two-phase Borrows in Stacked Borrows](https://www.ralfj.de/blog/2018/12/26/stacked-borrows-barriers.html)
 
 * [Rust Formal Verification Paradigm](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/311092/paper.pdf?sequence=1&isAllowed=y)
+
+### Blockchain <a name = "blockchain"></a>
+
+* [CKB's VM](https://github.com/nervosnetwork/ckb-vm)
+* [Exonum: private/permissioned blockchain framework](https://github.com/exonum/exonum)
+* [`holochain-rust`](https://github.com/holochain/holochain-rust)
+
+#### Substrate
+> [Parity Samples](https://github.com/parity-samples)
+
+* [Substrate Documentation](https://substrate.readme.io/docs)
+* **[Substrate Runtime Module Library](https://github.com/paritytech/substrate/tree/master/srml)**
+* [Substrate runtime recipes](https://substrate.readme.io/docs/substrate-runtime-recipes)
+* [Substrate Collectables Workshop](https://github.com/shawntabrizi/substrate-collectables-workshop)
+* [Substrate Proof of Existence](https://github.com/shawntabrizi/substrate-proof-of-existence)
+* [Substrate TCR](https://github.com/gautamdhameja/substrate-tcr)
+* [Substrate Events Listener](https://github.com/gautamdhameja/substrate-events-listener)
+* [srml example use w/ comments](https://github.com/paritytech/substrate/blob/master/srml/example/src/lib.rs)
+* [AdEx Notes](https://hackmd.io/p_v1M8WGRyy9PggYiKA_Xw#)

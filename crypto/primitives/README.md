@@ -1,7 +1,14 @@
 # Cryptographic Primitives
 > data structures, hashing, etc.
 
-> [probabilistic data structures](https://github.com/crepererum/pdatastructs.rs)
+* [A Collection of Well-tested, serializable CDRTs (Conflict Free Data Structures)](https://github.com/rust-crdt/rust-crdt)
+* [probabilistic data structures](https://github.com/crepererum/pdatastructs.rs)
+
+**Signatures**
+* [`signify-rs`](https://github.com/badboy/signify-rs) - create digital signatures for files and verify them
+* [Schnorr signatures on Ristretto](https://github.com/w3f/schnorrkel)
+    * [Javascript wrapper for schnorrkel signatures on Ristretto using WebAssembly](https://github.com/paritytech/schnorrkel-js)
+* [Fujisaki-Suzuki Ring Signatures](https://github.com/rozbb/fujisaki-ringsig)
 
 **Tree**
 * immutable tree => use `Vec` and refer to items by index
