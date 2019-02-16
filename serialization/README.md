@@ -9,5 +9,8 @@
 
 * [`byteorder`](https://docs.rs/byteorder/1.3.1/byteorder/): byte conversion methods for each type of number in Rust
 * [`bitvec`](https://docs.rs/bitvec/0.9.0/bitvec/): provides strong guarantees about, and fine-grained control of, the bit-level representation of a collection in memory. 
+    * [managing memory bit by bit (github repo)](https://github.com/myrrlyn/bitvec)
+
+* [`Hexilee/unhtml.rs`](https://github.com/Hexilee/unhtml.rs) -- html deserializer
 
 * [`rust-syndication/rss`]: for serializing the RSS web content syndication format(https://github.com/rust-syndication/rss)

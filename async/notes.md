@@ -38,6 +38,9 @@
 
 > *In essence, a future represents a value that might not be ready yet. Usually the future becomes complete (the value is ready) due to an event happening somewhere else.*
 
+* [Juliex](https://github.com/withoutboats/juliex) - a simple futures *executor*
+    * implemented as a threadpool executor using a single, shared queue. Algorithmically, it is very similar to the Threadpool executor provided by the futures crate. The main difference is that juliex uses a crossbeam channel and performs a single allocation per spawned future, whereas the futures Threadpool uses std concurrency primitives and multiple allocations.
+
 **What is an executor?**
 An executor ensures that the future is executed. In practice, this works by `poll`ing all the futures until they return `Async::Ready`. Here is the definition of `Future::poll` method:
 

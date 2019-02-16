@@ -50,13 +50,17 @@
 * [`structopt`](https://crates.io/crates/structopt) for argument parsing
 * [ds_store parser](https://github.com/sinistersnare/ds_store/blob/master/README.md)
 * [Making Rust Float Parsing Fast and Correct](https://www.reddit.com/r/rust/comments/a6j5j1/making_rust_float_parsing_fast_and_correct/?st=JPQ2J3ZW&sh=cb57fb7f)
+* [`briansmith/untrusted`](https://github.com/briansmith/untrusted) -- Safe, fast, zero-panic, zero-crashing, zero-allocation parsing of untrusted inputs in Rust
 
+* [`maciejhirsz/logos`](https://github.com/maciejhirsz/logos) -- create ridiculously fast lexers
 
 ### Program Language Building <a name = "pl"></a>
 
+* **[eDSL library for smart contracts (by Parity)](https://github.com/paritytech/fleetwood)**
 * [Zokrates](https://github.com/Zokrates/ZoKrates)
 * [how to roll out custom DSL w/o getting hurt](https://www.slideshare.net/RReverser/building-fast-interpreters-in-rust)
-
+* [`MaiaVictor/Symmetric-Interaction-Calculus`](https://github.com/MaiaVictor/Symmetric-Interaction-Calculus) -- programming language and model of computation that matches the optimal \lamda-calculus reduction algorithm perfectly
+* [`moonad/Formality`](https://github.com/moonad/Formality) -- an efficient, minimal programming language and proof assistant
 
 ### Currying <a name = "curry"></a>
 
@@ -71,22 +75,3 @@
 * [Barriers and Two-phase Borrows in Stacked Borrows](https://www.ralfj.de/blog/2018/12/26/stacked-borrows-barriers.html)
 
 * [Rust Formal Verification Paradigm](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/311092/paper.pdf?sequence=1&isAllowed=y)
-
-### Blockchain <a name = "blockchain"></a>
-
-* [CKB's VM](https://github.com/nervosnetwork/ckb-vm)
-* [Exonum: private/permissioned blockchain framework](https://github.com/exonum/exonum)
-* [`holochain-rust`](https://github.com/holochain/holochain-rust)
-
-#### Substrate
-> [Parity Samples](https://github.com/parity-samples)
-
-* [Substrate Documentation](https://substrate.readme.io/docs)
-* **[Substrate Runtime Module Library](https://github.com/paritytech/substrate/tree/master/srml)**
-* [Substrate runtime recipes](https://substrate.readme.io/docs/substrate-runtime-recipes)
-* [Substrate Collectables Workshop](https://github.com/shawntabrizi/substrate-collectables-workshop)
-* [Substrate Proof of Existence](https://github.com/shawntabrizi/substrate-proof-of-existence)
-* [Substrate TCR](https://github.com/gautamdhameja/substrate-tcr)
-* [Substrate Events Listener](https://github.com/gautamdhameja/substrate-events-listener)
-* [srml example use w/ comments](https://github.com/paritytech/substrate/blob/master/srml/example/src/lib.rs)
-* [AdEx Notes](https://hackmd.io/p_v1M8WGRyy9PggYiKA_Xw#)

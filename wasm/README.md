@@ -25,14 +25,20 @@ Picking up heat:
 
 ## Resources
 
+* [wasm-crypto](https://github.com/jedisct1/wasm-crypto) -- WebAssembly implementation of Ed25519-based operations and more
+
  * [schnorrkel-js: a JS wrapper for schnorrkel sigs on Ristretto using WASM](https://github.com/paritytech/schnorrkel-js)
 
 * [Threads and Atomics in WebAssembly](https://github.com/WebAssembly/threads)
+
+* [`rustwasm/wee_alloc`](https://github.com/rustwasm/wee_alloc) -- the wasm-enabled, elfin allocator (generates less than a kilobyte of uncompressed WebAssembly code)
 
 * [Continuous Integration for WebAssembly](https://rustwasm.github.io/book/reference/add-wasm-support-to-crate.html#maintaining-ongoing-support-for-webassembly)
 * [Testing on `wasn32-unknown-unknown` with `wasm-bindgen-test`](https://rustwasm.github.io/wasm-bindgen/wasm-bindgen-test/index.html)
 
 * [Rust WASM frontend framework comparison](https://github.com/flosse/rust-web-framework-comparison/blob/master/README.md#frontend-frameworks-wasm)
+    * [Tide Web Framework](https://github.com/rust-net-web/tide)
+    * `seed` (at top; I'm a fan of MUV for managing state)
 
 * [WASM on the Blockchain: The Lesser Evil](https://medium.com/polkadot-network/wasm-on-the-blockchain-the-lesser-evil-da8d7c6ef6bd)
 

@@ -5,6 +5,8 @@
 
 * [Ferrous Systems -- TCP Server Course in Rust](https://github.com/ferrous-systems/rust-three-days-course)
 
+* *[`jonhoo/faktory-rs`](https://github.com/jonhoo/faktory-rs)* -- Rust bindings for Faktory clients and workers
+
 ```
 trait SimpleFuture {
     type Output;
@@ -26,6 +28,7 @@ enum Poll<T> {
 * [paritytech/rhododendron](https://github.com/paritytech/rhododendron) -- asynchronously safe BFT consensus, implementation in Rust
 * [withoutboats/romio](https://github.com/withoutboats/romio) -- asynchronous networking primitives
 * [jonhoo/tokio-io-pool](https://github.com/jonhoo/tokio-io-pool) -- an I/O oriented tokio runtime thread pool
+* [fitzgen/state_machine_future](https://github.com/fitzgen/state_machine_future) -- easily create type-safe `Future`s from state machines
 
 **Lock-Free**
 <!--Find out what this means in the context of futures lmao, you're so far behind!!!-->

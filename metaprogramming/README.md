@@ -8,11 +8,13 @@
 * [Creating Macros in Rust Tutorial](https://hub.packtpub.com/creating-macros-in-rust-tutorial/)
 * [Procedural Macros in Rust 2018](https://blog.rust-lang.org/2018/12/21/Procedural-Macros-in-Rust-2018.html)
 * [Deriving Traits in Rust with Procedural Macros](https://naftuli.wtf/2019/01/02/rust-derive-macros/)
+* [proc-macro2](https://github.com/alexcrichton/proc-macro2) -- wrapper around the procedural macro API of the compiler's `proc_macro` crate
 
 *Examples*
 * [nymic](https://github.com/myrrlyn/nymic) -- crate for producing the type names of values
 * [`adhesion-rs`](https://github.com/ErichDonGubler/adhesion-rs) -- D-inspired contract programming in Rust using macros
 * [`ynek317/shellfn`](https://github.com/synek317/shellfn) -- Rust proc macro for easily and safely use shell scripts in Rust
+* [`lazy_static.rs`](https://github.com/rust-lang-nursery/lazy-static.rs) -- macro for defining lazy evaluated static variables
 
 ## Notes
 
