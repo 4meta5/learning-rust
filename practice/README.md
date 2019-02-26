@@ -14,10 +14,7 @@
 * [2018 AoC Solutions](#aoc)
 * [Algorithms](#algo)
 * [Parsing and Lexing](#parselex)
-* [PL Building](#pl)
 * [Currying](#curry)
-* [Formal Verification](#verify)
-* [Blockchain](#blockchain)
 
 ### Tricks <a name = "tricks"></a>
 
@@ -54,24 +51,9 @@
 
 * [`maciejhirsz/logos`](https://github.com/maciejhirsz/logos) -- create ridiculously fast lexers
 
-### Program Language Building <a name = "pl"></a>
-
-* **[eDSL library for smart contracts (by Parity)](https://github.com/paritytech/fleetwood)**
-* [Zokrates](https://github.com/Zokrates/ZoKrates)
-* [how to roll out custom DSL w/o getting hurt](https://www.slideshare.net/RReverser/building-fast-interpreters-in-rust)
-* [`MaiaVictor/Symmetric-Interaction-Calculus`](https://github.com/MaiaVictor/Symmetric-Interaction-Calculus) -- programming language and model of computation that matches the optimal \lamda-calculus reduction algorithm perfectly
-* [`moonad/Formality`](https://github.com/moonad/Formality) -- an efficient, minimal programming language and proof assistant
-
 ### Currying <a name = "curry"></a>
 
 **Currying** is a way to produce higher order functions that contain some context that in turn can be applied to all passed in parameters.
 * [Currying in Rust: Part 1](https://hashnode.com/post/currying-in-rust-cjpfb0i2z00cm56s2aideuo4z)
 * [Currying in Rust: Part 2](https://hashnode.com/post/currying-in-rust-part-2-a-glimpse-of-generics-cjphbgun90025pms241ggh3d9)
 * [Currying in Rust: Part 3](https://hashnode.com/post/currying-in-rust-part-3-the-circle-of-life-aka-why-borrowchecker-why-cjq3z1dd800dknds1sls4dqav)
-
-### Formal Verification <a name = "verify"></a>
-
-* [Stacked Borrows Implemented](https://www.ralfj.de/blog/2018/11/16/stacked-borrows-implementation.html)
-* [Barriers and Two-phase Borrows in Stacked Borrows](https://www.ralfj.de/blog/2018/12/26/stacked-borrows-barriers.html)
-
-* [Rust Formal Verification Paradigm](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/311092/paper.pdf?sequence=1&isAllowed=y)

@@ -1,5 +1,5 @@
 /// Rust State Machine Patterns 10/12/2016 by Hoverbear
-/// [](https://hoverbear.org/2016/10/12/rust-state-machine-pattern/)
+/// [link](https://hoverbear.org/2016/10/12/rust-state-machine-pattern/)
 /// For creating type-safe `Future`s from state machines 
 /// [fitzgen/state_machine_future](https://github.com/fitzgen/state_machine_future)
 
