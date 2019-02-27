@@ -8,6 +8,9 @@
     * [Async IO](#io)
 
 **ReadingQ**
+* [`exit-future`](https://github.com/paritytech/exit-future) -- Future that resolves when exit signal is set
+* [`aio-limited`](https://github.com/paritytech/aio-limited) -- rate limiting for `AsyncRead` and `AsyncWrite` types
+
 * [Tokio Internals](https://cafbit.com/post/tokio_internals/) -- very comprehensive
 
 * [Async Book Chapter on Futures](https://rust-lang.github.io/async-book/execution/future.html)

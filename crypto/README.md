@@ -13,8 +13,11 @@
 * [`brycx/orion`](https://github.com/brycx/orion) -- easy and usable rust crypto
 * [Blockchain Crypto MPC in `C`](https://github.com/unbound-tech/blockchain-crypto-mpc) -- FFI
 * [Verifiable Delay Function Implementation by POANetwork](https://github.com/poanetwork/vdf)
+* [Collective Coin Flip Implementation](https://github.com/paritytech/safe-mix)
 
 ### Blockchain <a name = "blockchain"></a>
+
+* [Parity's Umbral Proxy Re-Encryption Rust Implementation](https://github.com/paritytech/xpremtinel)
 
 * [`matterinc/plasma_winter`](https://github.com/matterinc/plasma_winter) -- an account model Plasma with with zkSNARK proved state transitions
 * [`matterinc/plasma_cash_history_snark`](https://github.com/matterinc/plasma_cash_history_snark) -- history compaction zkSNARK circuit for Plasma Cash and Cashflow history compaction

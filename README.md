@@ -5,6 +5,10 @@ An organized collection of Rust resources
 
 * [`Futures` and Asynchronous Patterns](./async)
     * [Resources and Notes](./async/notes.md)
+    * [Networking](./async/networking)
+        * [Libp2p](./async/networking/libp2p.md)
+        * [Databases and Cache Stuff](./async/networking/db.md)
+        * [RPC](./async/networking/rpc.md)
 * [Cryptography](./crypto)
     * [Data Structures](./crypto/primitives)
     * [Algebra](./crypto/algebra)
@@ -20,6 +24,7 @@ An organized collection of Rust resources
         * [`conversion.rs`](./simple/src/conversion.rs): practicing `From` and `Into` for conversion between types
         * [`statemachine.rs`](./simple/src/statemachine.rs): Rust state machine pattern by [Hoverbear](https://hoverbear.org/2016/10/12/rust-state-machine-pattern/)
         * [`combinators.rs`](./simple/src/combinator.rs): basic syntax and patterns for combinators (`map`, `and_then`)
+        * [`container.rs`](./simple/src/container.rs): `Box<T>` vs `Rc<T>` in the context of Trait dynamic dispatch
     * **[Code Patterns](./practice/README.md#pattern)**
     * [Serialization](./practice/serialization)
         * [basic JSON implementation with serde](./practice/serialization/serializer/src/lib.rs)
