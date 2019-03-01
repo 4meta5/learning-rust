@@ -1,7 +1,7 @@
 # Rust Playground
 An organized collection of Rust resources
 
-> [cheat.rs](https://cheat.rs), [brson/rust-anthology](https://github.com/brson/rust-anthology/blob/master/master-list.md), [ctjhoa/rust-learning](https://github.com/ctjhoa/rust-learning)
+> [cheats.rs](https://cheats.rs), [brson/rust-anthology](https://github.com/brson/rust-anthology/blob/master/master-list.md), [ctjhoa/rust-learning](https://github.com/ctjhoa/rust-learning)
 
 * [`Futures` and Asynchronous Patterns](./async)
     * [Resources and Notes](./async/notes.md)
