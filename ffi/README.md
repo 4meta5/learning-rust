@@ -1,5 +1,5 @@
 # Foreign Function Interface
-> How to use C programs in Rust
+> [Rust FFI Omnibus](https://github.com/shepmaster/rust-ffi-omnibus)
 
 * [Making a *-sys crate](https://kornel.ski/rust-sys-crate)
     * idea: make a Rust crate for calling extremely efficient existing C-based crypto library

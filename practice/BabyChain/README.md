@@ -16,6 +16,7 @@ A simple blockchain implementation for new Rustaceans who are also interested in
 
 ## Chapter N
 * use [this basic blockchain tutorial](https://hackernoon.com/learn-blockchains-by-building-one-117428612f46) with [TinyChain](https://github.com/Kayryu/TinyChain/tree/master/src)
+* [other tutorial by burrata](https://www.burrrata.ch/rusty_cryptoeconomics/intro.html)
 * use [Parity-Bitcoin]() -- add Proof of Work
 * add Proof of Stake
 

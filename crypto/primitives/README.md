@@ -10,6 +10,8 @@
 * [`dalek-cryptography/x25519-dalek`](https://github.com/dalek-cryptography/x25519-dalek) -- X25519 elliptic curve Diffie-Hellman key exchange
 * [`tendermint/kms`](https://github.com/tendermint/kms) -- key management service for Tenderment Validator nodes
 
+* [Lioness Block Cipher](https://github.com/burdges/lioness-rs) -- [relevant paper](https://www.cl.cam.ac.uk/~rja14/Papers/bear-lion.pdf)
+
 **Signatures**
 * [`signify-rs`](https://github.com/badboy/signify-rs) - create digital signatures for files and verify them
 * [Schnorr signatures on Ristretto](https://github.com/w3f/schnorrkel)
@@ -37,7 +39,6 @@
     * implementation of HashMap and HashSet for `no_std` environments: [Amanieu repo](https://github.com/Amanieu/hashmap_core)
     * [hashbrown](https://github.com/Amanieu/hashbrown)
 * [Concurrent Hash Map](https://docs.rs/chashmap/2.2.0/chashmap/)
-* [`jonhoo/rust-evmap`](https://github.com/jonhoo/rust-evmap) -- a lock-free, eventually consistent, concurrent multi-value map
 
 **Merkle Trees**
 * merkle_tree [naive implementation](https://github.com/niklasad1/merkle-tree-rs)
