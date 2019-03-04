@@ -47,7 +47,7 @@
 **What is an executor?**
 An executor ensures that the future is executed. In practice, this works by `poll`ing all the futures until they return `Async::Ready`. Here is the definition of `Future::poll` method:
 
-```
+```rust
 type Poll<T, E> = Result<Async<T>, E>;
 ```
 The return type of the `Future::poll` method, indicates whether a future's value is ready or not. This returns
@@ -84,7 +84,7 @@ Things become very interesting with futures when you combine them:
 
 > Rather than opting for the *completion-based* approach, in which events are signaled based on completion of operations, the Rust implementation of `Future`s is "demand-driven"(*readiness-based*). 
 
-```
+```rust
 /// A simplified version of the trait, without error-handling
 trait Future {
     // the type of value produced on success
