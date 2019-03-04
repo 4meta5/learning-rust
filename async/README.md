@@ -1,13 +1,28 @@
 # Futures => Async/Await
-> [`futures`, `async/await`](./notes.md), [networking](./networking.md)
+
+* [`futures`, `async/await`](./notes.md)
+* [networking](./networking)
+
+To define a custom `future`, you typically import the following:
+
+```rust
+use futures::prelude::*;
+use std::pin::Pin;
+use task::{Waker, Poll};
+```
+
+## WG Coordination
+
+* [Async Ecosystem WG](https://blog.yoshuawuyts.com/async-ecosystem-wg/) -- 2/27/2019 by YoshuaWuyts
+* [Async/Await Status Report](http://smallcultfollowing.com/babysteps/blog/2019/03/01/async-await-status-report/) -- 3/1/2019 by 
+
+## Code and References
 
 * [The What and How of Futures and async/await in Rust](https://www.youtube.com/watch?v=9_3krAQtD2k) by JonHoo
-
-* [Ferrous Systems -- TCP Server Course in Rust](https://github.com/ferrous-systems/rust-three-days-course)
-
+* [Ferrous Systems -- TCP Server Course in Rust](https://github.com/ferrous-systems/rust-three-days-course)1
 * *[`jonhoo/faktory-rs`](https://github.com/jonhoo/faktory-rs)* -- Rust bindings for Faktory clients and workers (may be useful for coding `async helpers`)
 
-```
+```rust
 trait SimpleFuture {
     type Output;
     fn poll(&mut self, wake: fn()) -> Poll<Self::Output>;
@@ -18,9 +33,6 @@ enum Poll<T> {
     Pending,
 }
 ```
-
-* HoneyBadgerBFT implementation (by rphmeier)
-* tokyio (Farenheit) -- simple futures executor for learning purposes
 
 **Future Reference Repos**
 * [Farenheit](https://rust-lang-nursery.github.io/futures-rs/blog/2018/08/17/toykio.html)
@@ -37,10 +49,6 @@ enum Poll<T> {
     * [blog post](http://www.rossbencina.com/code/lockfree)
     * [jonhoo/bus](https://github.com/jonhoo/bus)
 * [Rust concurrency checker](https://github.com/carllerche/loom)
-
-**Pin Reading**
-* [withoutboats/async_self_referential_structs](https://boats.gitlab.io/blog/post/2018-01-25-async-i-self-referential-structs/)
-* [A Formal Look at Pinning](https://www.ralfj.de/blog/2018/04/05/a-formal-look-at-pinning.html)
 
 ## Blind Spots
 * `Pin`

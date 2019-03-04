@@ -1,4 +1,5 @@
 # Domain Specific Language Research
+> [intro by yoshuawuyts](https://blog.yoshuawuyts.com/dsls-1/)
 
 * **[ Fleetwood: eDSL library for smart contracts](https://github.com/paritytech/fleetwood)**
 * [Zokrates](https://github.com/Zokrates/ZoKrates)

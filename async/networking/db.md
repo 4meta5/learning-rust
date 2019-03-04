@@ -2,6 +2,7 @@
 
 ## Cache
 
+* **[memdb](https://github.com/rustasync/memdb) -- thread-safe in-memory key-value store.**
 * [Append-only, on-disk key-value index](https://github.com/krl/appendix)
     * [writing an append-only, on-disk key-value store with lockless threads in Rust](https://github.com/krl/appendix/blob/master/description/writing.md)
 * [`krl/cache`](https://github.com/krl/cache) -- type agnostic, fixed size cache

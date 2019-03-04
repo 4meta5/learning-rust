@@ -3,7 +3,7 @@
 
 Generators in Rust enable you to create functions that can "yield" (maintain their state such that they can be called again until they finally return). Here's a function that returns a generator:
 
-```
+```rust
 #![feature(generators, generator_trait, conservative_impl_trait)]
 
 use std::ops::Generator;
@@ -34,7 +34,6 @@ Likewise, generators save a minimal representation of their "stack" when they yi
 
 > The problem arises when some of that stack state that is being preserved references other items that you're preserving from the stack. Because all of this state is stored together in the "generator enum", this becomes a special case of self-referential structs.
 
-
 ## Practical Costs of Immovability are Marginal
 
 The *generator problem* is that you can't move self-referential generators once you start calling `resume`. For iterators, this corresponds to the `next` method, whereas for futures, it corresponds to `poll`. 
@@ -59,3 +58,6 @@ By convention and API design, you are unlikely to want to move a self-referentia
     * [II](https://boats.gitlab.io/blog/post/2018-01-30-async-ii-narrowing-the-scope/)
     * [IV](https://boats.gitlab.io/blog/post/2018-02-07-async-iv-an-even-better-proposal/)
     * [V](https://boats.gitlab.io/blog/post/2018-02-08-async-v-getting-back-to-the-futures/)
+
+* [WithoutBlogs: Generator I](https://boats.gitlab.io/blog/post/generators-i/)
+    * [II](https://boats.gitlab.io/blog/post/generators-ii/)
