@@ -18,6 +18,7 @@
 
 ### Tricks <a name = "tricks"></a>
 
+* [Rust Tips by Spacejam](https://github.com/spacejam/elements-of-rust)
 * [Rust Flow](https://myrrlyn.net/blog/misc/rust-flow)
 * [Vorner's Rust Hacks](https://vorner.github.io/2019/02/03/hacks.html)
 

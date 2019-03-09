@@ -8,4 +8,6 @@ AsyncWrite
 Sink
 Stream
 
-> then, go check out the Libp2p `RwSinkStream` trait
+*Then check out the following crates*
+* the Libp2p `RwSinkStream` trait
+* [Rate Limiting Async IO](https://github.com/paritytech/aio-limited)
