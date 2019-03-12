@@ -23,31 +23,23 @@ Picking up heat:
 
 * [WebAssembly Troubles part 1: WebAssembly Is Not a Stack Machine](http://troubles.md/posts/wasm-is-not-a-stack-machine/)
 
+* [Rust WASM Worker Template](https://github.com/VictorGavrish/rust-wasm-worker-template)
+
 ## Resources
 
 * [wasm-crypto](https://github.com/jedisct1/wasm-crypto) -- WebAssembly implementation of Ed25519-based operations and more
-
- * [schnorrkel-js: a JS wrapper for schnorrkel sigs on Ristretto using WASM](https://github.com/paritytech/schnorrkel-js)
-
+* [schnorrkel-js: a JS wrapper for schnorrkel sigs on Ristretto using WASM](https://github.com/paritytech/schnorrkel-js)
 * [Threads and Atomics in WebAssembly](https://github.com/WebAssembly/threads)
-
 * [`rustwasm/wee_alloc`](https://github.com/rustwasm/wee_alloc) -- the wasm-enabled, elfin allocator (generates less than a kilobyte of uncompressed WebAssembly code)
-
 * [Continuous Integration for WebAssembly](https://rustwasm.github.io/book/reference/add-wasm-support-to-crate.html#maintaining-ongoing-support-for-webassembly)
 * [Testing on `wasn32-unknown-unknown` with `wasm-bindgen-test`](https://rustwasm.github.io/wasm-bindgen/wasm-bindgen-test/index.html)
-
 * [Rust WASM frontend framework comparison](https://github.com/flosse/rust-web-framework-comparison/blob/master/README.md#frontend-frameworks-wasm)
     * [Tide Web Framework](https://github.com/rust-net-web/tide)
     * `seed` (at top; I'm a fan of MUV for managing state)
-
 * [WASM on the Blockchain: The Lesser Evil](https://medium.com/polkadot-network/wasm-on-the-blockchain-the-lesser-evil-da8d7c6ef6bd)
-
 * [Rust and WebAssembly in 2019](http://fitzgeraldnick.com/2018/12/14/rust-and-webassembly-in-2019.html)
-
 * [Interesting WebAssembly (github) issue with some compiler stuff](https://github.com/WebAssembly/design/issues/796)
-
 * [nebulet/nebulet](https://github.com/nebulet/nebulet?files=1)
     * Nebulet is a microkernel that executes WebAssembly modules in ring 0 and a single address space to increase performance. This allows for low context-switch overhead, syscalls just being function calls, and exotic optimizations that simply would not be possible on conventional operating systems. The WebAssembly is verified, and due to a trick used to optimize out bounds-checking, unable to even represent the act of writing or reading outside its assigned linear memory.
-
 * [React/Redux style programming in Rust](https://github.com/richardanaya/virtual-dom-rs-counter/blob/master/README.md)
 * [redux-rs](https://github.com/redux-rs/redux-rs)

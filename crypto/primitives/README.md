@@ -30,6 +30,15 @@
 * [Bounded octree for spatial partitioning](https://github.com/Nercury/octree-rs)
 * [`paritytech/trie`](https://github.com/paritytech/trie) -- Base-16 Modified Particia Merkle Tree (aka Trie)
 
+**Merkle Trees**
+* merkle_tree [naive implementation](https://github.com/niklasad1/merkle-tree-rs)
+* to implement in Rust -- [Merkle Set](https://github.com/bramcohen/MerkleSet)
+* [Flexible Binary Merkle Tree](https://github.com/ChosunOne/merkle_bit)
+    * [blog post](https://medium.com/@niallmoore22/binary-merkle-trie-aad76f422983)
+* to impl in Rust -- [Aergo State Trie](https://github.com/aergoio/aergo/tree/master/pkg/trie)
+    * [blog post](https://medium.com/aergo/releasing-statetrie-a-hash-tree-built-for-high-performance-interoperability-6ce0406b12ae)
+
+
 **Graph**
 * [Creating an empty iterator of a certain type in Rust](https://www.freedomlayer.org/offst/option-iterator/)
 
@@ -39,11 +48,6 @@
     * implementation of HashMap and HashSet for `no_std` environments: [Amanieu repo](https://github.com/Amanieu/hashmap_core)
     * [hashbrown](https://github.com/Amanieu/hashbrown)
 * [Concurrent Hash Map](https://docs.rs/chashmap/2.2.0/chashmap/)
-
-**Merkle Trees**
-* merkle_tree [naive implementation](https://github.com/niklasad1/merkle-tree-rs)
-
-* to implement in Rust -- [Merkle Set](https://github.com/bramcohen/MerkleSet)
 
 **Matrix**
 * [Half Matrix](https://github.com/jojolepro/half-matrix?files=1)

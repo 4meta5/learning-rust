@@ -5,8 +5,10 @@ An organized collection of Rust resources
 
 * [`Futures` and Asynchronous Patterns](./async)
     * [Resources and Notes](./async/notes.md)
+    * [LockFree Algorithms](./async/lockfree)
     * [Networking](./async/networking)
         * [Libp2p](./async/networking/libp2p.md)
+        * [QUIC](./async/networking/quic.md)
         * [Databases and Cache Stuff](./async/networking/db.md)
         * [RPC](./async/networking/rpc.md)
 * [Cryptography](./crypto)
@@ -19,12 +21,12 @@ An organized collection of Rust resources
 * [Macros](./metaprogramming)
 * [Practice](./practice)
     * *Basics*
-        * [`linkedlist.rs`](./simple/src/linkedlist.rs): very simple linked list implementation to demonstrate the `struct`-`impl` code pattern common in Rust (from [abeinges too many lists book](http://cglab.ca/~abeinges/blah/too-many-lists/book/))
-        * [`recurrence.rs`](./simple/src/recurrence.rs): macros in Rust with recursion via the fibonacci sequence
-        * [`conversion.rs`](./simple/src/conversion.rs): practicing `From` and `Into` for conversion between types
-        * [`statemachine.rs`](./simple/src/statemachine.rs): Rust state machine pattern by [Hoverbear](https://hoverbear.org/2016/10/12/rust-state-machine-pattern/)
-        * [`combinators.rs`](./simple/src/combinator.rs): basic syntax and patterns for combinators (`map`, `and_then`)
-        * [`container.rs`](./simple/src/container.rs): `Box<T>` vs `Rc<T>` in the context of Trait dynamic dispatch
+        * [`linkedlist.rs`](./practice/simple/src/linkedlist.rs): very simple linked list implementation to demonstrate the `struct`-`impl` code pattern common in Rust (from [abeinges too many lists book](http://cglab.ca/~abeinges/blah/too-many-lists/book/))
+        * [`recurrence.rs`](./practice/simple/src/recurrence.rs): macros in Rust with recursion via the fibonacci sequence
+        * [`conversion.rs`](./practice/simple/src/conversion.rs): practicing `From` and `Into` for conversion between types
+        * [`statemachine.rs`](./practice/simple/src/statemachine.rs): Rust state machine pattern by [Hoverbear](https://hoverbear.org/2016/10/12/rust-state-machine-pattern/)
+        * [`combinators.rs`](./practice/simple/src/combinator.rs): basic syntax and patterns for combinators (`map`, `and_then`)
+        * [`container.rs`](./practice/simple/src/container.rs): `Box<T>` vs `Rc<T>` in the context of Trait dynamic dispatch
     * **[Code Patterns](./practice/README.md#pattern)**
     * [Serialization](./practice/serialization)
         * [basic JSON implementation with serde](./practice/serialization/serializer/src/lib.rs)
