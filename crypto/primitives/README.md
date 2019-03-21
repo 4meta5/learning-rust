@@ -38,7 +38,6 @@
 * to impl in Rust -- [Aergo State Trie](https://github.com/aergoio/aergo/tree/master/pkg/trie)
     * [blog post](https://medium.com/aergo/releasing-statetrie-a-hash-tree-built-for-high-performance-interoperability-6ce0406b12ae)
 
-
 **Graph**
 * [Creating an empty iterator of a certain type in Rust](https://www.freedomlayer.org/offst/option-iterator/)
 
@@ -59,3 +58,4 @@
 * [Hashlife](https://en.wikipedia.org/wiki/Hashlife) for Conway's Game of Life
 * [Zero-Runtime-Cost Mixed List in Rust](http://nercury.github.io/rust/interesting/2015/12/12/typed-arrays.html)
 * [`debris/ethbloom`](https://github.com/debris/ethbloom)
+* **[BTreeMap Docs](https://doc.rust-lang.org/std/collections/struct.BTreeMap.html)**

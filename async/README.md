@@ -11,7 +11,7 @@ use std::pin::Pin;
 use task::{Waker, Poll};
 ```
 
-[SRC(https://boats.gitlab.io/blog/post/wakers-i/): The async/await pattern in Rust is comprised of three fundamental components:
+[SRC](https://boats.gitlab.io/blog/post/wakers-i/): The async/await pattern in Rust is comprised of three fundamental components:
 1. **futures** are like a pause-able computation (really a proxy for an eventual response; compile down to state machines)
 2. the **executor** schedules futures by polling them when they are ready to make progress
 3. the futures depend on **event-sources** (for async IO, this is called the **reactor**). The **event-source wakes the executor** when an event occurs that will allow the future to make progress
