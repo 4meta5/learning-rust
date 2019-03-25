@@ -8,11 +8,12 @@
     * [Async IO](#io)
 
 **ReadingQ**
+* **[snoyman futures tutorial](https://www.snoyman.com/blog/2018/12/rust-crash-course-07-async-futures-tokio)**
+
 * [`exit-future`](https://github.com/paritytech/exit-future) -- Future that resolves when exit signal is set
 * [`aio-limited`](https://github.com/paritytech/aio-limited) -- rate limiting for `AsyncRead` and `AsyncWrite` types
 
 * [Tokio Internals](https://cafbit.com/post/tokio_internals/) -- very comprehensive
-
 * [Async Book Chapter on Futures](https://rust-lang.github.io/async-book/execution/future.html)
 
 * **[Turon's Async Rust Book](https://aturon.github.io/apr/)**

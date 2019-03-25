@@ -1,7 +1,6 @@
 # Futures => Async/Await
 
 * [`futures`, `async/await`](./notes.md)
-* [networking](./networking)
 
 To define a custom `future`, you typically import the following:
 
@@ -27,12 +26,12 @@ The asynchronous **event loop** <br>
 ## WG Coordination
 
 * [Async Ecosystem WG](https://blog.yoshuawuyts.com/async-ecosystem-wg/) -- 2/27/2019 by YoshuaWuyts
-* [Async/Await Status Report](http://smallcultfollowing.com/babysteps/blog/2019/03/01/async-await-status-report/) -- 3/1/2019 by 
+* [Async/Await Status Report](http://smallcultfollowing.com/babysteps/blog/2019/03/01/async-await-status-report/) -- 3/1/2019
 
 ## Code and References
 
 * [The What and How of Futures and async/await in Rust](https://www.youtube.com/watch?v=9_3krAQtD2k) by JonHoo
-* [Ferrous Systems -- TCP Server Course in Rust](https://github.com/ferrous-systems/rust-three-days-course)1
+* [Ferrous Systems -- TCP Server Course in Rust](https://github.com/ferrous-systems/rust-three-days-course)
 * *[`jonhoo/faktory-rs`](https://github.com/jonhoo/faktory-rs)* -- Rust bindings for Faktory clients and workers (may be useful for coding `async helpers`)
 
 **Future Reference Repos**
