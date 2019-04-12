@@ -3,14 +3,6 @@ An organized collection of Rust resources
 
 > [cheats.rs](https://cheats.rs), [brson/rust-anthology](https://github.com/brson/rust-anthology/blob/master/master-list.md), [ctjhoa/rust-learning](https://github.com/ctjhoa/rust-learning)
 
-* [`Futures` and Asynchronous Patterns](./async)
-    * [Resources and Notes](./async/notes.md)
-    * [LockFree Algorithms](./async/lockfree)
-* [Cryptography](./crypto)
-    * [Data Structures](./crypto/primitives)
-    * [Algebra](./crypto/algebra)
-    * [Shamir's Secret Sharing Scheme](./crypto/erasure/ssss)
-        * for conceptual background on information theory, see [notes metalink](https://github.com/AmarRSingh/notes/tree/master/Cryptography/InformationTheory)
 * [Error-Handling](./error)
 * [Foreign Function Interface](./ffi)
 * [Macros](./metaprogramming)
@@ -25,6 +17,11 @@ An organized collection of Rust resources
     * **[Code Patterns](./practice/README.md#pattern)**
     * [Serialization](./practice/serialization)
         * [basic JSON implementation with serde](./practice/serialization/serializer/src/lib.rs)
+* [Cryptography](./crypto)
+    * [Data Structures](./crypto/primitives)
+    * [Algebra](./crypto/algebra)
+    * [Shamir's Secret Sharing Scheme](./crypto/erasure/ssss)
+        * for conceptual background on information theory, see [notes metalink](https://github.com/AmarRSingh/notes/tree/master/Cryptography/InformationTheory)
 * [WASM (and JS interaction with Rust)](./wasm)
     * [notes](./wasm/Rusty_WASM.md)
 
