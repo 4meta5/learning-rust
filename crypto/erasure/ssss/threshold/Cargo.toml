@@ -1,9 +1,0 @@
-[package]
-name = "threshold"
-version = "0.1.0"
-authors = ["Amar Singh <asinghchrony@protonmail.com>"]
-edition = "2018"
-
-[dependencies]
-rand = "0.6.1"
-futures = "0.1.17"
