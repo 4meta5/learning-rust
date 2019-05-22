@@ -1,5 +1,4 @@
 # Learning Rust
-> keeping track of the resources I pulled from to become familiar with the Rust p
 
 **MetaLinks**
 * [cheats.rs](https://cheats.rs)
