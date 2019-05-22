@@ -1,8 +1,17 @@
-# Rust Playground
-An organized collection of Rust resources
+# Learning Rust
+> keeping track of the resources I pulled from to become familiar with the Rust p
 
-> [cheats.rs](https://cheats.rs), [brson/rust-anthology](https://github.com/brson/rust-anthology/blob/master/master-list.md), [ctjhoa/rust-learning](https://github.com/ctjhoa/rust-learning)
+**MetaLinks**
+* [cheats.rs](https://cheats.rs)
+* [brson/rust-anthology](https://github.com/brson/rust-anthology/blob/master/master-list.md)
+* [ctjhoa/rust-learning](https://github.com/ctjhoa/rust-learning)
 
+**Teaching Resources**
+* [Rust Quiz](https://dtolnay.github.io/rust-quiz/)
+* [The Rust Book](https://doc.rust-lang.org/book/index.html)
+* [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)
+
+## Notes
 * [Error-Handling](./error)
 * [Foreign Function Interface](./ffi)
 * [Macros](./metaprogramming)
