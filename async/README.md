@@ -1,5 +1,9 @@
 # Asynchronous Programming
 
+*instead of using interior mutability where an object changes its internal state, consider using a pattern where you promote new state to be current and current consumers of the old state will continue to hold on to it by putting an `Arc` into an `RwLock`.* ~[You Can't Rust That](https://lucumr.pocoo.org/2018/3/31/you-cant-rust-that/)
+
+## old notes (still correct)
+
 *Futures are a concept for an object which is a proxy for another value that may not be ready yet. With an object representing a value that will eventually be available, futures allow for powerful composition of tasks through basic combinators that can perform operations like chaining computations, changing the types of futures, or waiting for two futures to complete at the same time.*
 
 > *In essence, a future represents a value that might not be ready yet. Usually the future becomes complete (the value is ready) due to an event happening somewhere else.*
