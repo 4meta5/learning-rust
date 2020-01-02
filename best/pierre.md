@@ -1,5 +1,5 @@
 # Let's Design Better APIs
-> by *Pierre_Krieger*, Parity
+> by [tomaka](https://github.com/tomaka)
 
 *Remember: you're optimizing code for readability. Programming is not so much about implementing some specific logic as it is about making it in a straight-forward, understandable, and easy-to-change way.*
 
