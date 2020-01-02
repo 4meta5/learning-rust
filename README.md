@@ -4,6 +4,8 @@
 * [The Rust Book](https://doc.rust-lang.org/book/index.html)
 * [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)
 
+Best practices are haphazardly collected in [best](./best)
+
 **MetaLinks**
 * [cheats.rs](https://cheats.rs)
 * [brson/rust-anthology](https://github.com/brson/rust-anthology/blob/master/master-list.md)
