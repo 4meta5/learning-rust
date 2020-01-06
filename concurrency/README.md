@@ -4,7 +4,7 @@
 * [A Methodology for Creating Fast Wait-Free Data Structures](./fast_slow.md)
 * [Fearless Concurrency? Understanding Concurrent Programming Safety in Real-World Rust Software](./fearless.md)
 
-*Dope MetaLinks*
+*MetaLinks*
 * **[Fear and Loathing in Lock-Free Programming](https://medium.com/@tylerneely/fear-and-loathing-in-lock-free-programming-7158b1cdd50c)**
 * [Lock-free Rust: Crossbeam in 2019](https://stjepang.github.io/2019/01/29/lock-free-rust-crossbeam-in-2019.html)
 

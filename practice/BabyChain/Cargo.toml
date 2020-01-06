@@ -1,7 +1,0 @@
-[package]
-name = "BabyChain"
-version = "0.1.0"
-authors = ["Amar Singh <asinghchrony@protonmail.com>"]
-edition = "2018"
-
-[dependencies]

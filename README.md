@@ -14,8 +14,7 @@ Best practices are haphazardly collected in [best](./best)
 
 The beginning of the [substrate recipes](https://substrate.dev/recipes/base/rust.html) provides some references to the common Rust libraries for concurrency/parallelization, asynchronous computation, and multithreading.
 
-# my notes (this repo)
-* [Basic Recipes](./practice)
+* [Getting Started with Rust](./practice)
     * *Basics*
         * [`linkedlist.rs`](./practice/simple/src/linkedlist.rs): very simple linked list implementation to demonstrate the `struct`-`impl` code pattern common in Rust (from [abeinges too many lists book](http://cglab.ca/~abeinges/blah/too-many-lists/book/))
         * [`recurrence.rs`](./practice/simple/src/recurrence.rs): macros in Rust with recursion via the fibonacci sequence
@@ -35,6 +34,3 @@ The beginning of the [substrate recipes](https://substrate.dev/recipes/base/rust
     * [notes](./wasm/Rusty_WASM.md)
 
 > Extra: [Rust Governance](./governance)
-
-## todo
-move design to category theory rust learnings library

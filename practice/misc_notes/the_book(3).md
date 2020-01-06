@@ -14,8 +14,6 @@ The *Gang of Four* book defines OOP as:
 
 Using this definition, Rust is object oriented: structs and enums have data, and ```impl``` blocks provide methods on structs and enums.
 
-# I DECIDED TO PAUSE BOOK NOTES AND START BUILDING A FEW PWASM TUTORIALS
-
 ## Procedural Macros <a name="proceduralmacros">
 
 At the moment, procedural macros need to be in their own crate. For a crate named ```foo```, a custom derive procedural macros is called ```foo-derive```. 
