@@ -15,7 +15,7 @@ At this point, there are a few options:
 Rust is still a bit awkward still when it comes to error handling. There is a lot that is great about it, but there are also many ways to handle it. It can be quite nice to work with, and also quite frustrating at times.
 
 The following is how I tend to handle errors. You will note that I am not relying on crates as `error-chain` or `failure`. I do use the `Display` derive from `derive-more` as it's super useful.
-```
+```rust
 #[derive(Debug, Display)]
 #[display(fmt = "{}", kind)]
 pub struct MyError
@@ -71,13 +71,13 @@ impl MyError
 
 So now I can do something like...
 
-```
+```rust
 return Err(MyErrorKind::Startup.into());
 ```
 
 Or
 
-```
+```rust
 // I like using .map_err over relying on an impl From<T> as I can 
 // provide context. This also gives me a point to match on if it's
 // something I can recover from.
@@ -87,7 +87,7 @@ a_result
 
 And then of course I can spit out all of the causes as a kind of 'backtrace' of my error during error logging
 
-```
+```rust
 error!("Encountered an error: {}", err.to_string());
 {
     let mut err: &Error = &err;

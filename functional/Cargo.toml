@@ -1,0 +1,5 @@
+[package]
+name = "rust-ctfp"
+version = "0.1.0"
+authors = ["4meta5"]
+edition = "2018"
