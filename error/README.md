@@ -1,5 +1,17 @@
 # Error Handling
 
+* [Rust 2020 by ncameron](https://www.ncameron.org/blog/rust-in-2020-one-more-thing/)
+* [Thoughts on Error Handling in Rust](https://lukaskalbertodt.github.io/2019/11/14/thoughts-on-error-handling-in-rust.html)
+* [Error Handling Survey](https://blog.yoshuawuyts.com/error-handling-survey/)
+
+*some crates*
+* [failure](https://github.com/rust-lang-nursery/failure)
+* [error_chain](https://github.com/rust-lang-nursery/error-chain)
+* [custom_error](https://github.com/lovasoa/custom_error)
+* [quick-error](https://github.com/tailhook/quick-error)
+
+## old writing
+
 At this point, there are a few options:
 
 * if you return `Result<_, Box<Error>>`, any result with an error type that implements Error is usable with `?`.

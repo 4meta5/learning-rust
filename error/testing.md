@@ -11,6 +11,7 @@
 * [`proptest`](https://crates.io/crates/proptest): it generates test according to properties we desire; nondeterminism in testing random values and deterministic replay for easy debugging (useful for compression and serialization; can also provide your own `proptest` macro generators)
 * [`quickcheck`](https://crates.io/crates/quickcheck)
 * [`model`](https://crates.io/crates/model)
+* [mockiato](https://github.com/myelin-ai/mockiato)
 
 *OS level*
 * [`ptrace` command](http://man7.org/linux/man-pages/man2/ptrace.2.html)
